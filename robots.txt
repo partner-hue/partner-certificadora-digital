@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://partnercertificadoradigital.com/sitemap.xml
