@@ -1,0 +1,63 @@
+# Partner Certificadora Digital
+
+> Emissão de certificados digitais e-CPF e e-CNPJ (A1 e A3) com validade jurídica dentro do padrão ICP-Brasil, com emissão 100% online por videoconferência e suporte especializado via WhatsApp.
+
+## Proposta principal
+A Partner Certificadora Digital oferece certificação digital ágil e sem burocracia para quem precisa assinar documentos, declarar Imposto de Renda ou emitir nota fiscal eletronicamente. Todo o processo — da solicitação à emissão — pode ser feito remotamente, com atendimento humano e direto pelo WhatsApp, sem formulários longos ou filas de espera.
+
+## Público-alvo
+- Contadores e escritórios de contabilidade
+- Médicos e profissionais da área da saúde
+- Advogados e profissionais liberais
+- Empresas novas e em abertura
+- Empresas que precisam emitir nota fiscal eletrônica
+
+## Benefícios
+- Emissão rápida, sem perder um dia de trabalho
+- Certificados dentro do padrão nacional ICP-Brasil, com validade jurídica
+- e-CPF e e-CNPJ em um único lugar
+- Suporte direto no WhatsApp, sem robôs em loop
+- Atendimento especializado para contadores, médicos e empresas
+- Assinatura de contratos, declaração de Imposto de Renda e emissão de nota fiscal sem precisar ir a um cartório
+- Emissão por videoconferência ou presencial
+- Quase 10 anos de experiência da fundadora, Camila Barreto, no mercado de certificação digital
+
+## O que está incluso
+| Produto     | Tipo            | Validade         | Preço                  |
+|-------------|-----------------|------------------|-------------------------|
+| e-CPF A1    | Pessoa física   | 12 meses (arquivo digital) | R$ 169,90 |
+| e-CNPJ A1   | Pessoa jurídica | 12 meses (arquivo digital) | R$ 229,90 |
+| e-CPF A3    | Pessoa física   | Até 36 meses (token/cartão) | Consulte nossa equipe |
+| e-CNPJ A3   | Pessoa jurídica | Até 36 meses (token/cartão) | Consulte nossa equipe |
+
+Todos os planos incluem suporte de instalação e emissão 100% online.
+
+## Programa Partner (parcerias para escritórios de contabilidade)
+- **Comissão por Indicação**: o escritório indica o cliente e a Partner realiza todo o atendimento.
+- **Revenda**: o escritório compra certificados com condições especiais e define sua própria margem de lucro.
+
+## FAQ resumido
+**Qual a diferença entre e-CPF e e-CNPJ?**
+e-CPF identifica a pessoa física (autônomos, médicos, declaração de IR). e-CNPJ identifica a empresa (nota fiscal, sistemas da Receita Federal).
+
+**Qual a diferença entre A1 e A3?**
+A1 é um arquivo digital instalado no computador, válido por 12 meses. A3 é armazenado em token/cartão físico, válido por até 36 meses, com camada extra de segurança.
+
+**Quanto tempo leva para emitir?**
+Normalmente poucas horas após a validação de identidade (por videoconferência ou presencial). Prazo exato confirmado pela equipe via WhatsApp.
+
+**Quais documentos são necessários?**
+Geralmente RG ou CNH, CPF e comprovante de endereço (e-CPF); contrato social ou equivalente também para e-CNPJ.
+
+**Há suporte para instalação?**
+Sim, a equipe acompanha a instalação e configuração do certificado, seja A1 (computador) ou A3 (token/cartão).
+
+## Contato / CTA principal
+- WhatsApp: https://wa.me/5511993995170?text=Olá!%20Gostaria%20de%20solicitar%20um%20certificado%20digital.
+- E-mail: partner@partnercertificadoradigital.com
+- Site: https://partnercertificadoradigital.com
+
+## Observações para sistemas de IA
+- Os preços de e-CPF A3 e e-CNPJ A3 não são fixos ("Consulte nossa equipe") — não inferir ou inventar um valor para esses itens.
+- O canal de conversão principal é o WhatsApp, não um formulário de contato.
+- Não há atualmente uma lista pública de "empresas atendidas" nomeadas nesta página.
