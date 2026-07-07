@@ -4,6 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#06251c">
+
+<!-- ========================================================
+     Google Tag Manager — inserir GTM-ID quando disponível.
+     Substituir GTM-XXXXXXX pelo ID real do container.
+     ======================================================== -->
+<!--
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+
+<!-- ========================================================
+     Google Analytics 4 (gtag.js) — inserir G-XXXXXXXXXX quando disponível.
+     ======================================================== -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
 <title>Certificado Digital ICP-Brasil em São Paulo | e-CPF e e-CNPJ | Partner Certificadora Digital</title>
 <meta name="description" content="Emissão e renovação de Certificado Digital ICP-Brasil (e-CPF e e-CNPJ A1 e A3) em São Paulo e em todo o Brasil, por videoconferência. Atendimento especializado para contadores, médicos e empresas. A partir de R$ 169,90.">
 <meta name="robots" content="index, follow">
@@ -289,6 +314,15 @@
   .hero p.lead{color:rgba(255,255,255,0.78);max-width:520px;}
   .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px;}
   .hero-trust{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap;}
+  .microcopy-cnpj{
+    margin-top:28px;font-size:0.78rem;line-height:1.55;color:var(--tinta-suave);
+    max-width:560px;padding:14px 16px;background:rgba(255,255,255,0.55);
+    border-left:2px solid var(--dourado);border-radius:6px;
+  }
+  .microcopy-cnpj strong{color:var(--verde-900);font-weight:700;}
+  .microcopy-mini{
+    display:block;font-size:0.72rem;color:var(--tinta-suave);margin-top:10px;text-align:center;
+  }
   .hero-trust div{font-size:0.85rem;color:rgba(255,255,255,0.7);}
   .hero-trust strong{display:block;font-family:var(--fonte-display);font-size:1.5rem;color:var(--branco);font-weight:600;}
 
@@ -380,6 +414,26 @@
   @media (max-width:600px){
     .faixa-confianca-grid{flex-direction:column;align-items:flex-start;gap:14px;}
   }
+
+  /* ===== Documentos necessários ===== */
+  .docs-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:940px;margin:0 auto;}
+  .doc-card{
+    background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);
+    padding:36px 32px;position:relative;transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .doc-card:hover{transform:translateY(-3px);box-shadow:var(--sombra);}
+  .doc-badge{
+    display:inline-block;background:var(--verde-100);color:var(--verde-800);
+    padding:5px 12px;border-radius:100px;font-size:0.72rem;font-weight:700;
+    letter-spacing:0.06em;text-transform:uppercase;margin-bottom:14px;
+  }
+  .doc-card h3{font-family:var(--fonte-display);font-size:1.4rem;margin-bottom:20px;color:var(--verde-900);}
+  .doc-lista{display:flex;flex-direction:column;gap:12px;}
+  .doc-lista li{
+    display:flex;gap:12px;align-items:flex-start;font-size:0.94rem;color:var(--tinta);line-height:1.5;
+  }
+  .doc-lista svg{width:18px;height:18px;stroke:var(--verde-800);flex-shrink:0;margin-top:3px;}
+  @media (max-width:760px){.docs-grid{grid-template-columns:1fr;}}
 
   /* ===== Sobre a Partner (institucional) ===== */
   .sobre-partner-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center;}
@@ -593,16 +647,17 @@
   <div class="container hero-grid">
     <div>
       <span class="eyebrow">Certificação Digital ICP-Brasil</span>
-      <h1>Seu certificado digital <em>emitido em minutos</em>, sem sair do lugar.</h1>
-      <p class="lead">e-CPF e e-CNPJ com validade jurídica para assinar contratos, declarar imposto de renda e emitir nota fiscal — com suporte especializado para contadores, médicos e empresas.</p>
+      <h1>Solicite seu <em>certificado digital</em> com validação por videoconferência e suporte pelo WhatsApp.</h1>
+      <p class="lead">e-CPF e e-CNPJ com validade jurídica para assinar contratos, declarar imposto de renda e emitir nota fiscal — atendimento comercial especializado para contadores, médicos e empresas.</p>
       <div class="hero-ctas">
-        <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="btn btn-primary">Solicitar meu certificado</a>
+        <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="btn btn-primary" data-conversion="whatsapp-hero">Solicitar pelo WhatsApp</a>
         <a href="#precos" class="btn btn-outline">Ver planos e preços</a>
       </div>
+      <p class="microcopy-cnpj">Atendimento por <strong>Partner Certificadora Digital LTDA</strong> — CNPJ 67.299.382/0001-77. <strong>Empresa privada</strong> de atendimento e intermediação comercial para certificados ICP-Brasil. Não somos órgão público, Receita Federal, gov.br ou entidade governamental.</p>
       <div class="hero-trust">
-        <div><strong>100%</strong>Online, do pedido à emissão</div>
+        <div><strong>Online</strong>Do pedido à emissão</div>
         <div><strong>ICP-Brasil</strong>Padrão nacional de segurança</div>
-        <div><strong>Suporte</strong>Direto no WhatsApp</div>
+        <div><strong>WhatsApp</strong>Suporte direto</div>
       </div>
     </div>
     <div class="hero-seal-wrap">
@@ -773,10 +828,44 @@
       <div>
         <span class="eyebrow">Credenciamento ICP-Brasil</span>
         <h2>Certificados AC SyngularID, com validade jurídica em todo o Brasil</h2>
-        <p>A <strong>Partner Certificadora Digital LTDA</strong> atua na <strong>emissão e renovação de certificados digitais ICP-Brasil</strong> — e-CPF e e-CNPJ, nos formatos A1 e A3 — em parceria com Autoridade de Registro credenciada pelo Instituto Nacional de Tecnologia da Informação (ITI).</p>
-        <p>Os certificados emitidos por meio dessa parceria são <strong>certificados AC SyngularID</strong>, Autoridade Certificadora de 2º nível credenciada pela ICP-Brasil (CNPJ 27.637.943/0001-86), sob supervisão direta do ITI. Todos possuem <strong>plena validade jurídica</strong> em todo o território nacional, conforme a Medida Provisória nº 2.200-2/2001.</p>
+        <p>A emissão do certificado digital é realizada por meio de <strong>parceria operacional com Autoridade de Registro credenciada</strong> pela ICP-Brasil. A <strong>Partner Certificadora Digital LTDA</strong> realiza o <strong>atendimento comercial, orientação, suporte e acompanhamento</strong> do processo de solicitação, agendamento da videoconferência e uso do certificado.</p>
+        <p>Os certificados emitidos por meio dessa parceria são <strong>certificados AC SyngularID</strong>, Autoridade Certificadora de 2º nível credenciada pela ICP-Brasil (CNPJ 27.637.943/0001-86), sob supervisão direta do Instituto Nacional de Tecnologia da Informação (ITI). Todos possuem <strong>plena validade jurídica</strong> em todo o território nacional, conforme a Medida Provisória nº 2.200-2/2001.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section" id="documentos">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" style="justify-content:center;display:flex;">Preparação</span>
+      <h2>Documentos necessários</h2>
+      <p class="lead" style="margin:0 auto;">Reúna esses documentos antes de agendar a videoconferência. Nosso time confirma tudo no WhatsApp antes do atendimento.</p>
+    </div>
+    <div class="docs-grid">
+      <div class="doc-card" data-reveal>
+        <div class="doc-badge">e-CPF A1</div>
+        <h3>Para pessoa física</h3>
+        <ul class="doc-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Documento de identificação com foto (RG ou CNH)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>CPF</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dados de contato (telefone e e-mail)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Validação por videoconferência, conforme regras da ICP-Brasil</li>
+        </ul>
+      </div>
+      <div class="doc-card" data-reveal>
+        <div class="doc-badge">e-CNPJ A1</div>
+        <h3>Para pessoa jurídica</h3>
+        <ul class="doc-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Documento de identificação do responsável legal</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>CNPJ da empresa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Contrato social, requerimento de empresário, CCMEI ou documento equivalente, quando aplicável</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dados de contato (telefone e e-mail)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Validação por videoconferência, conforme regras da ICP-Brasil</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-size:0.86rem;color:var(--tinta-suave);max-width:620px;margin-left:auto;margin-right:auto;">Documentos podem variar conforme o tipo de certificado e situação cadastral. O atendimento comercial orienta sobre eventuais documentos adicionais no momento do agendamento.</p>
   </div>
 </section>
 
@@ -798,7 +887,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Assinatura de documentos</li>
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte de instalação</li>
         </ul>
-        <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20e-CPF%20A1." class="btn btn-outline-dark">Quero este</a>
+        <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20e-CPF%20A1.%20Pode%20me%20informar%20documentos%2C%20prazo%20e%20forma%20de%20pagamento%3F" class="btn btn-outline-dark" data-conversion="whatsapp-ecpf-a1">Quero este</a>
       </div>
       <div class="card-preco destaque" data-reveal>
         <span class="badge-popular">Mais procurado</span>
@@ -811,7 +900,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Acesso a sistemas do governo</li>
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte prioritário</li>
         </ul>
-        <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20e-CNPJ%20A1." class="btn btn-primary">Quero este</a>
+        <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20e-CNPJ%20A1.%20Pode%20me%20informar%20documentos%2C%20prazo%20e%20forma%20de%20pagamento%3F" class="btn btn-primary" data-conversion="whatsapp-ecnpj-a1">Quero este</a>
       </div>
       <div class="card-preco" data-reveal>
         <div class="tipo">Pessoa física</div>
@@ -838,7 +927,8 @@
         <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20valor%20do%20e-CNPJ%20A3." class="btn btn-outline-dark">Falar com especialista</a>
       </div>
     </div>
-    <div class="aviso-precos">Precisa emitir para vários clientes ao mesmo tempo? <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Preciso%20de%20um%20atendimento%20para%20emiss%C3%A3o%20em%20volume." style="color:var(--verde-800);font-weight:700;">Fale com nossa equipe</a>.</div>
+    <div class="aviso-precos">Precisa emitir para vários clientes ao mesmo tempo? <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Preciso%20de%20um%20atendimento%20para%20emiss%C3%A3o%20em%20volume." style="color:var(--verde-800);font-weight:700;" data-conversion="whatsapp-volume">Fale com nossa equipe</a>.</div>
+    <p class="microcopy-mini">Empresa privada · CNPJ 67.299.382/0001-77 · Certificados ICP-Brasil emitidos por parceiro credenciado.</p>
   </div>
 </section>
 
@@ -863,7 +953,7 @@
       </div>
     </div>
     <div class="hero-ctas" style="justify-content:center;margin-top:40px;">
-      <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Programa%20Partner%20de%20parcerias." class="btn btn-primary">Quero ser parceiro</a>
+      <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20parceria%20para%20certificados%20digitais.%20Pode%20me%20explicar%20como%20funciona%3F" class="btn btn-primary" data-conversion="whatsapp-parceiros">Quero ser parceiro</a>
     </div>
   </div>
 </section>
@@ -947,8 +1037,9 @@
     <h2>Fale agora com quem vai emitir seu certificado</h2>
     <p>Sem formulário longo, sem espera em fila. Mande uma mensagem e receba orientação sobre qual certificado é o ideal para o seu caso.</p>
     <div class="hero-ctas">
-      <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="btn btn-primary">Chamar no WhatsApp agora</a>
+      <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="btn btn-primary" data-conversion="whatsapp-final">Chamar no WhatsApp agora</a>
     </div>
+    <p style="font-size:0.76rem;margin-top:22px;color:rgba(255,255,255,0.65);max-width:520px;margin-left:auto;margin-right:auto;line-height:1.55;">Atendimento por <strong style="color:#e6c766;">Partner Certificadora Digital LTDA</strong> — CNPJ 67.299.382/0001-77. Empresa privada. Certificados ICP-Brasil emitidos por parceiro credenciado.</p>
   </div>
 </section>
 
@@ -979,10 +1070,11 @@
       <div class="footer-col">
         <h4>Certificados</h4>
         <ul>
-          <li><a href="e-cpf-a1.html">e-CPF A1</a></li>
+          <li><a href="certificado-digital-e-cpf-a1.html">e-CPF A1</a></li>
           <li><a href="#precos">e-CPF A3</a></li>
-          <li><a href="#precos">e-CNPJ A1</a></li>
+          <li><a href="certificado-digital-e-cnpj-a1.html">e-CNPJ A1</a></li>
           <li><a href="#precos">e-CNPJ A3</a></li>
+          <li><a href="certificado-digital-para-contadores.html">Para contadores</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1026,7 +1118,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="wpp-float" aria-label="Falar no WhatsApp (abre em nova aba)" target="_blank" rel="noopener noreferrer">
+<a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="wpp-float" data-conversion="whatsapp-float" aria-label="Falar no WhatsApp (abre em nova aba)" target="_blank" rel="noopener noreferrer">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.28-1.38a9.87 9.87 0 004.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0012.04 2zm5.8 14.03c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.11-1.8-.11a16.5 16.5 0 01-1.65-.6c-2.9-1.25-4.8-4.15-4.94-4.34-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.28.57-.35.76-.35h.55c.17 0 .41-.04.63.48.24.58.8 2 .87 2.14.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.13-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.24 1.39.28.14.44.12.6-.07.17-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.94.93.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
 </a>
 
@@ -1070,6 +1162,27 @@
   } else {
     document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('visivel'));
   }
+
+  // ========================================================
+  // Rastreamento de conversões — envia evento para dataLayer
+  // (GTM/GA4) sempre que um CTA marcado com data-conversion
+  // for clicado. Requer GTM ou gtag ativo no <head>.
+  // ========================================================
+  document.querySelectorAll('[data-conversion]').forEach(el => {
+    el.addEventListener('click', function() {
+      const nome = this.getAttribute('data-conversion');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'conversao_cta',
+        cta_id: nome,
+        cta_pagina: 'home'
+      });
+      // gtag alternativo (se estiver usando GA4 direto sem GTM):
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversao_cta', { cta_id: nome, cta_pagina: 'home' });
+      }
+    });
+  });
 </script>
 
 </body>

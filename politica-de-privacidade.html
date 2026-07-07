@@ -5,154 +5,207 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#06251c">
 <title>Política de Privacidade | Partner Certificadora Digital</title>
-<meta name="description" content="Política de Privacidade da Partner Certificadora Digital: como tratamos dados pessoais, cookies e os direitos do usuário conforme a LGPD.">
+<meta name="description" content="Política de Privacidade da Partner Certificadora Digital LTDA — tratamento de dados pessoais conforme LGPD (Lei nº 13.709/2018).">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://partnercertificadoradigital.com/politica-de-privacidade">
+<link rel="canonical" href="https://partnercertificadoradigital.com/politica-de-privacidade.html">
+
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="logo-180.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
   :root{
-    --verde-900:#06251c;--verde-800:#0b3d2e;--verde-700:#124a38;--verde-100:#e7efe9;
+    --verde-900:#06251c;--verde-800:#0b3d2e;--verde-100:#e7efe9;
     --bg:#f8f7f1;--bg-alt:#f1efe4;
     --dourado:#c9a227;--dourado-claro:#e6c766;--dourado-escuro:#7a5f12;
     --tinta:#132018;--tinta-suave:#4a5a52;--borda:#e1ddcf;--branco:#ffffff;
-    --fonte-display:'Fraunces', Georgia, serif;--fonte-corpo:'Manrope', -apple-system, sans-serif;
-    --raio:14px;--raio-sm:8px;--max:860px;
+    --fonte-display:'Fraunces', Georgia, serif;
+    --fonte-corpo:'Manrope', -apple-system, sans-serif;
+    --raio:14px;--raio-sm:8px;
+    --max:820px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:var(--fonte-corpo);color:var(--tinta);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;}
-  a{color:var(--verde-800);}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--fonte-corpo);color:var(--tinta);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:var(--verde-800);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s;}
+  a:hover{border-bottom-color:var(--dourado);}
   .container{max-width:var(--max);margin:0 auto;padding:0 24px;}
-  h1,h2{font-family:var(--fonte-display);font-weight:600;color:var(--verde-900);line-height:1.15;}
-  h1{font-size:clamp(2rem,4vw,2.7rem);}
-  h2{font-size:1.4rem;margin:44px 0 14px;}
-  p,li{color:var(--tinta-suave);font-size:1rem;}
+  h1,h2,h3{font-family:var(--fonte-display);color:var(--verde-900);line-height:1.2;font-weight:600;}
+  h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px;}
+  h2{font-size:1.4rem;margin:36px 0 14px;}
+  h3{font-size:1.1rem;margin:24px 0 10px;}
+  p, li{color:var(--tinta-suave);margin-bottom:14px;}
+  ul, ol{padding-left:22px;margin-bottom:14px;}
   li{margin-bottom:8px;}
-  ul{margin-left:20px;margin-top:8px;}
+  strong{color:var(--verde-900);}
 
-  header{position:sticky;top:0;z-index:100;background:rgba(248,247,241,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--borda);}
-  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
-  .logo{display:flex;align-items:center;gap:10px;font-family:var(--fonte-display);font-weight:700;font-size:1.15rem;color:var(--verde-900);text-decoration:none;}
-  .logo img{width:34px;height:34px;object-fit:contain;}
-  .voltar{font-size:0.9rem;font-weight:600;color:var(--tinta-suave);text-decoration:none;}
-  .voltar:hover{color:var(--verde-800);}
+  header{background:linear-gradient(135deg, var(--verde-800), var(--verde-900));color:var(--branco);padding:60px 0 50px;margin-bottom:50px;}
+  header .container{max-width:var(--max);}
+  header h1{color:var(--branco);}
+  header p{color:rgba(255,255,255,0.7);font-size:0.95rem;margin:0;}
+  .voltar{display:inline-flex;align-items:center;gap:6px;color:var(--dourado-claro);font-size:0.9rem;font-weight:600;margin-bottom:20px;border:none;}
+  .voltar:hover{color:var(--branco);}
 
-  .hero-pagina{background:var(--verde-900);color:var(--branco);padding:64px 0 56px;}
-  .hero-pagina .container{}
-  .hero-pagina h1{color:var(--branco);}
-  .hero-pagina p{color:rgba(255,255,255,0.75);margin-top:12px;max-width:640px;}
+  main{padding-bottom:80px;}
+  .destaque{background:var(--bg-alt);border-left:3px solid var(--dourado);padding:20px 24px;border-radius:var(--raio-sm);margin:24px 0;}
+  .destaque p:last-child{margin-bottom:0;}
 
-  main{padding:64px 0 90px;}
-  .aviso{
-    background:var(--bg-alt);border:1px solid var(--borda);border-radius:var(--raio-sm);
-    padding:16px 20px;font-size:0.9rem;color:var(--tinta-suave);margin-bottom:40px;
-  }
-
-  footer{background:var(--verde-900);color:rgba(255,255,255,0.6);padding:40px 0;text-align:center;font-size:0.85rem;}
-  footer a{color:rgba(255,255,255,0.75);}
+  footer{background:var(--verde-900);color:rgba(255,255,255,0.65);padding:40px 0;font-size:0.85rem;text-align:center;}
+  footer a{color:rgba(255,255,255,0.75);border:none;}
+  footer a:hover{color:var(--dourado-claro);}
 
   @media (max-width:600px){
-    .nav-wrap{padding:14px 20px;}
-    main{padding:48px 0 64px;}
-    .hero-pagina{padding:48px 0 40px;}
+    header{padding:40px 0 30px;margin-bottom:30px;}
+    h2{font-size:1.25rem;margin:28px 0 12px;}
   }
 </style>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N8SS9C7B');</script>
-<!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8SS9C7B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 
 <header>
-  <div class="nav-wrap">
-    <a href="/" class="logo">
-      <img src="logo-192.png" alt="Partner Certificadora Digital" width="34" height="34" decoding="async">
-      Partner Certificadora Digital
-    </a>
-    <a href="/" class="voltar">← Voltar ao site</a>
+  <div class="container">
+    <a href="index.html" class="voltar">← Voltar ao início</a>
+    <h1>Política de Privacidade</h1>
+    <p>Partner Certificadora Digital LTDA — CNPJ 67.299.382/0001-77</p>
+    <p style="margin-top:6px;">Última atualização: 07 de julho de 2026</p>
   </div>
 </header>
 
-<section class="hero-pagina">
-  <div class="container">
-    <h1>Política de Privacidade</h1>
-    <p>Como a Partner Certificadora Digital coleta, usa e protege as informações de quem visita este site e solicita nossos serviços.</p>
-  </div>
-</section>
-
 <main>
-  <div class="container">
-    <p class="aviso">Última atualização: julho de 2026. Este documento é um modelo inicial de referência e não substitui uma revisão jurídica formal antes da publicação definitiva.</p>
+<div class="container">
 
-    <h2>1. Quem somos</h2>
-    <p>A Partner Certificadora Digital ("Partner", "nós") oferece serviços de emissão de certificados digitais e-CPF e e-CNPJ. Esta política explica como tratamos os dados pessoais de quem visita este site ou solicita nossos serviços, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+<h2>1. Quem somos e como nos contatar</h2>
+<p>Esta Política de Privacidade descreve como a <strong>Partner Certificadora Digital LTDA</strong>, pessoa jurídica de direito privado, inscrita no CNPJ sob o nº <strong>67.299.382/0001-77</strong>, com sede na Rua Coronel José Eusébio, 95, Casa 13, Higienópolis, São Paulo/SP, CEP 01239-030 (doravante "Partner" ou "nós"), coleta, utiliza, armazena, compartilha e protege os dados pessoais dos usuários e clientes que interagem com nossos canais de atendimento e com o website <a href="https://partnercertificadoradigital.com/">partnercertificadoradigital.com</a>.</p>
 
-    <h2>2. Quais dados coletamos</h2>
-    <p>Podemos coletar as seguintes categorias de dados, dependendo da sua interação com o site:</p>
-    <ul>
-      <li>Dados de contato fornecidos voluntariamente ao iniciar uma conversa pelo WhatsApp ou e-mail (nome, telefone, e-mail);</li>
-      <li>Dados necessários à emissão do certificado digital, coletados diretamente pela nossa equipe durante o atendimento (CPF, CNPJ, documentos de identificação), conforme exigido pelas normas da ICP-Brasil;</li>
-      <li>Dados de navegação (como páginas visitadas), quando ferramentas de análise estiverem ativas no site.</li>
-    </ul>
+<p>Para qualquer questão relacionada à privacidade e ao tratamento de seus dados pessoais, o canal oficial é o e-mail <a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a> ou o WhatsApp <strong>(11) 99399-5170</strong>.</p>
 
-    <h2>3. Como usamos os dados</h2>
-    <p>Utilizamos os dados coletados para:</p>
-    <ul>
-      <li>Responder a solicitações de contato e orçamento;</li>
-      <li>Processar a emissão de certificados digitais, quando contratados;</li>
-      <li>Cumprir obrigações legais e regulatórias aplicáveis à certificação digital;</li>
-      <li>Melhorar a experiência de navegação no site.</li>
-    </ul>
+<h2>2. Natureza da atividade e papel da Partner</h2>
+<p>A Partner é uma <strong>empresa privada</strong> de atendimento comercial e intermediação para a solicitação de certificados digitais no padrão ICP-Brasil. A emissão dos certificados é realizada por meio de parceria operacional com Autoridade de Registro (AR) credenciada pela ICP-Brasil e sob supervisão do Instituto Nacional de Tecnologia da Informação (ITI).</p>
 
-    <h2>4. Compartilhamento de dados</h2>
-    <p>Não vendemos dados pessoais a terceiros. Dados necessários à emissão do certificado podem ser compartilhados com as Autoridades Certificadoras integrantes da ICP-Brasil, exclusivamente para a finalidade de emissão e validação do certificado.</p>
+<p><strong>A Partner não é órgão público, não é Receita Federal, não é gov.br e não representa entidade governamental.</strong></p>
 
-    <h2>5. Cookies</h2>
-    <p>Este site pode utilizar cookies e tecnologias semelhantes para lembrar preferências de navegação e, quando aplicável, medir o desempenho de páginas. Você pode gerenciar ou desativar cookies diretamente nas configurações do seu navegador; isso pode afetar algumas funcionalidades do site.</p>
+<h2>3. Dados pessoais que podemos coletar</h2>
+<p>Para viabilizar o atendimento comercial, a orientação sobre o processo e o encaminhamento da solicitação do certificado digital junto à Autoridade de Registro parceira, poderemos coletar os seguintes dados pessoais:</p>
 
-    <h2>6. Seus direitos como titular de dados (LGPD)</h2>
-    <p>De acordo com a LGPD, você tem direito a:</p>
-    <ul>
-      <li>Confirmar a existência de tratamento dos seus dados;</li>
-      <li>Acessar os dados que temos sobre você;</li>
-      <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
-      <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários;</li>
-      <li>Solicitar a portabilidade dos dados a outro fornecedor;</li>
-      <li>Revogar o consentimento e solicitar a eliminação dos dados tratados com base nele;</li>
-      <li>Obter informações sobre com quem compartilhamos seus dados.</li>
-    </ul>
+<h3>3.1. Dados de contato e identificação</h3>
+<ul>
+  <li>Nome completo</li>
+  <li>Telefone e/ou WhatsApp</li>
+  <li>E-mail</li>
+  <li>CPF</li>
+  <li>CNPJ, quando aplicável</li>
+</ul>
 
-    <h2>7. Retenção de dados</h2>
-    <p>Mantemos os dados pessoais pelo tempo necessário ao cumprimento das finalidades descritas nesta política ou pelo prazo exigido por obrigações legais e regulatórias aplicáveis à certificação digital.</p>
+<h3>3.2. Documentos exigidos para validação</h3>
+<ul>
+  <li>Documento de identificação com foto (RG, CNH ou equivalente)</li>
+  <li>Contrato social, requerimento de empresário, CCMEI ou documento equivalente, para pessoas jurídicas</li>
+  <li>Documentos adicionais eventualmente exigidos pela Autoridade de Registro para a validação de identidade, conforme regras da ICP-Brasil</li>
+</ul>
 
-    <h2>8. Segurança</h2>
-    <p>Adotamos medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acessos não autorizados e situações de destruição, perda, alteração ou vazamento.</p>
+<h3>3.3. Dados de uso e navegação</h3>
+<ul>
+  <li>Endereço IP, tipo de dispositivo, sistema operacional e navegador</li>
+  <li>Páginas visitadas, tempo de permanência e origem do acesso</li>
+  <li>Dados coletados por cookies, conforme nossa <a href="politica-de-cookies.html">Política de Cookies</a></li>
+</ul>
 
-    <h2>9. Contato</h2>
-    <p>Para exercer seus direitos como titular de dados ou tirar dúvidas sobre esta política, entre em contato:</p>
-    <ul>
-      <li>E-mail: <a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a></li>
-      <li>WhatsApp: <a href="https://wa.me/5511993995170">(11) 99399-5170</a></li>
-    </ul>
-  </div>
+<h2>4. Finalidades do tratamento</h2>
+<p>Os dados pessoais coletados são utilizados para as seguintes finalidades:</p>
+<ul>
+  <li>Atendimento comercial, orientação e suporte durante o processo de solicitação do certificado digital</li>
+  <li>Encaminhamento da solicitação à Autoridade de Registro credenciada, para fins de validação e emissão do certificado</li>
+  <li>Comunicação com o cliente pelos canais informados (WhatsApp, telefone, e-mail)</li>
+  <li>Emissão de documentos fiscais</li>
+  <li>Cumprimento de obrigações legais, regulatórias e contratuais</li>
+  <li>Melhoria dos nossos serviços e da experiência de navegação</li>
+  <li>Prevenção a fraudes e proteção da segurança das informações</li>
+</ul>
+
+<h2>5. Bases legais</h2>
+<p>O tratamento dos dados pessoais é realizado com fundamento nas bases legais previstas na Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD), notadamente:</p>
+<ul>
+  <li><strong>Execução de contrato ou de procedimentos preliminares:</strong> para o atendimento comercial e a intermediação da solicitação do certificado digital</li>
+  <li><strong>Cumprimento de obrigação legal ou regulatória:</strong> para atender normas fiscais, tributárias e regulatórias aplicáveis à atividade</li>
+  <li><strong>Legítimo interesse:</strong> para prevenção a fraudes, segurança e melhoria dos serviços</li>
+  <li><strong>Consentimento:</strong> para envio de comunicações comerciais e para uso de cookies não essenciais, quando aplicável</li>
+</ul>
+
+<h2>6. Compartilhamento de dados</h2>
+<p>Os dados pessoais poderão ser compartilhados com as seguintes categorias de terceiros, exclusivamente para as finalidades descritas nesta política:</p>
+
+<ul>
+  <li><strong>Autoridade de Registro (AR) credenciada e Autoridade Certificadora (AC)</strong> parceira, para viabilizar a validação de identidade e a emissão do certificado digital, conforme as normas da ICP-Brasil</li>
+  <li><strong>Prestadores de serviços</strong> essenciais à operação, como provedores de hospedagem, plataformas de comunicação e ferramentas de gestão, sempre sob obrigações contratuais de confidencialidade e proteção de dados</li>
+  <li><strong>Autoridades públicas e órgãos reguladores,</strong> quando exigido por lei, ordem judicial ou solicitação de autoridade competente</li>
+</ul>
+
+<div class="destaque">
+  <p>A Partner <strong>não vende</strong> seus dados pessoais e <strong>não compartilha</strong> suas informações para fins de marketing de terceiros sem seu consentimento expresso.</p>
+</div>
+
+<h2>7. Armazenamento e prazo de retenção</h2>
+<p>Os dados pessoais são armazenados pelo período necessário ao cumprimento das finalidades para as quais foram coletados, respeitando os prazos legais aplicáveis, especialmente:</p>
+<ul>
+  <li>Prazos definidos pela legislação fiscal, tributária e trabalhista</li>
+  <li>Prazos exigidos pelas normas da ICP-Brasil para registros relacionados à emissão de certificados digitais</li>
+  <li>Prazos necessários para exercício regular de direitos em processos judiciais, administrativos ou arbitrais</li>
+</ul>
+<p>Após o encerramento do prazo de retenção, os dados serão eliminados ou anonimizados, salvo hipóteses de guarda obrigatória previstas em lei.</p>
+
+<h2>8. Direitos do titular</h2>
+<p>Nos termos da LGPD, o titular dos dados pessoais tem direito a, mediante requisição:</p>
+<ul>
+  <li>Confirmar a existência de tratamento de seus dados</li>
+  <li>Acessar seus dados</li>
+  <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+  <li>Solicitar a anonimização, o bloqueio ou a eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
+  <li>Solicitar a portabilidade dos dados a outro fornecedor de serviço ou produto</li>
+  <li>Solicitar a eliminação dos dados tratados com consentimento, ressalvadas as hipóteses de guarda legal</li>
+  <li>Obter informação sobre as entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados</li>
+  <li>Ser informado sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa</li>
+  <li>Revogar o consentimento</li>
+</ul>
+<p>Para exercer qualquer desses direitos, o titular deve entrar em contato pelo e-mail <a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a>. A resposta será encaminhada em prazo razoável, observados os limites legais.</p>
+
+<h2>9. Segurança da informação</h2>
+<p>Adotamos medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acessos não autorizados, situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de tratamento inadequado. Entre essas medidas estão o uso de conexões criptografadas (HTTPS), controle de acesso, políticas internas de segurança e acordos de confidencialidade com prestadores de serviço.</p>
+<p>Ainda assim, nenhum sistema é 100% invulnerável. Caso ocorra um incidente de segurança que possa acarretar risco ou dano relevante aos titulares, a Autoridade Nacional de Proteção de Dados (ANPD) e os titulares afetados serão comunicados, nos termos da LGPD.</p>
+
+<h2>10. Cookies</h2>
+<p>Este website utiliza cookies para melhorar a experiência de navegação, medir o desempenho das páginas e, quando aplicável, apoiar campanhas de marketing. Para saber quais cookies são utilizados e como gerenciá-los, consulte nossa <a href="politica-de-cookies.html">Política de Cookies</a>.</p>
+
+<h2>11. Transferência internacional de dados</h2>
+<p>Alguns dos prestadores de serviço utilizados (como plataformas de hospedagem, análise de tráfego ou comunicação) podem armazenar dados em servidores localizados fora do Brasil. Nesses casos, adotamos medidas para garantir que a transferência ocorra em conformidade com a LGPD e com nível adequado de proteção.</p>
+
+<h2>12. Alterações desta Política</h2>
+<p>Esta Política de Privacidade poderá ser atualizada a qualquer momento para refletir mudanças em nossos serviços, na legislação aplicável ou em nossas práticas de tratamento de dados. A versão em vigor será sempre a publicada nesta página, com indicação da data de última atualização.</p>
+
+<h2>13. Contato do Encarregado (DPO)</h2>
+<p>Para questões relacionadas ao tratamento de dados pessoais, dúvidas sobre esta Política ou solicitações relativas aos direitos previstos na LGPD, o canal oficial é:</p>
+<div class="destaque">
+  <p><strong>Partner Certificadora Digital LTDA</strong><br>
+  E-mail: <a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a><br>
+  WhatsApp: (11) 99399-5170<br>
+  Endereço: Rua Coronel José Eusébio, 95, Casa 13, Higienópolis, São Paulo/SP, CEP 01239-030</p>
+</div>
+
+</div>
 </main>
 
 <footer>
   <div class="container">
-    © 2026 Partner Certificadora Digital. Todos os direitos reservados. · <a href="/">Voltar ao site</a>
+    <p>© 2026 Partner Certificadora Digital LTDA — CNPJ 67.299.382/0001-77</p>
+    <p style="margin-top:10px;">
+      <a href="index.html">Início</a> ·
+      <a href="quem-somos.html">Quem Somos</a> ·
+      <a href="termos-de-uso.html">Termos de Uso</a> ·
+      <a href="politica-de-cookies.html">Política de Cookies</a>
+    </p>
   </div>
 </footer>
 
