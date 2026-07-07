@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#06251c">
-<title>Certificado Digital e-CPF e e-CNPJ | Partner Certificadora Digital</title>
-<meta name="description" content="e-CPF e e-CNPJ A1 e A3 com emissão 100% online por videoconferência. Suporte especializado para contadores, médicos e empresas. A partir de R$ 169,90.">
+<title>Certificado Digital ICP-Brasil em São Paulo | e-CPF e e-CNPJ | Partner Certificadora Digital</title>
+<meta name="description" content="Emissão e renovação de Certificado Digital ICP-Brasil (e-CPF e e-CNPJ A1 e A3) em São Paulo e em todo o Brasil, por videoconferência. Atendimento especializado para contadores, médicos e empresas. A partir de R$ 169,90.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://partnercertificadoradigital.com/">
 
@@ -15,8 +15,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Partner Certificadora Digital">
-<meta property="og:title" content="Certificado Digital e-CPF e e-CNPJ | Partner Certificadora Digital">
-<meta property="og:description" content="e-CPF e e-CNPJ A1 e A3 com emissão 100% online por videoconferência. Suporte especializado para contadores, médicos e empresas.">
+<meta property="og:title" content="Certificado Digital ICP-Brasil em São Paulo | e-CPF e e-CNPJ | Partner Certificadora Digital">
+<meta property="og:description" content="Emissão e renovação de Certificado Digital ICP-Brasil (e-CPF e e-CNPJ A1 e A3) em São Paulo e em todo o Brasil, por videoconferência. Atendimento especializado para contadores, médicos e empresas.">
 <meta property="og:image" content="https://partnercertificadoradigital.com/logo-512.png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
@@ -24,8 +24,8 @@
 <meta property="og:url" content="https://partnercertificadoradigital.com/">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Certificado Digital e-CPF e e-CNPJ | Partner Certificadora Digital">
-<meta name="twitter:description" content="e-CPF e e-CNPJ A1 e A3 com emissão 100% online por videoconferência. Suporte especializado para contadores, médicos e empresas.">
+<meta name="twitter:title" content="Certificado Digital ICP-Brasil em São Paulo | e-CPF e e-CNPJ | Partner Certificadora Digital">
+<meta name="twitter:description" content="Emissão e renovação de Certificado Digital ICP-Brasil (e-CPF e e-CNPJ A1 e A3) em São Paulo e em todo o Brasil, por videoconferência. Atendimento especializado para contadores, médicos e empresas.">
 <meta name="twitter:image" content="https://partnercertificadoradigital.com/logo-512.png">
 
 <script type="application/ld+json">
@@ -33,16 +33,53 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
+      "@type": ["LocalBusiness", "ProfessionalService", "Organization"],
       "@id": "https://partnercertificadoradigital.com/#organizacao",
       "name": "Partner Certificadora Digital",
+      "legalName": "Partner Certificadora Digital LTDA",
+      "alternateName": "Partner Certificadora Digital",
+      "description": "Atendimento na emissão e renovação de certificados digitais ICP-Brasil e-CPF e e-CNPJ (A1 e A3) por videoconferência e presencialmente em São Paulo. Certificados AC SyngularID, Autoridade Certificadora credenciada pela ICP-Brasil (CNPJ 27.637.943/0001-86).",
       "image": "https://partnercertificadoradigital.com/logo-512.png",
+      "logo": "https://partnercertificadoradigital.com/logo-512.png",
       "url": "https://partnercertificadoradigital.com/",
       "telephone": "+5511993995170",
       "email": "partner@partnercertificadoradigital.com",
+      "taxID": "67.299.382/0001-77",
+      "vatID": "67.299.382/0001-77",
       "priceRange": "R$169,90 - R$229,90",
-      "areaServed": "BR",
-      "founder": { "@type": "Person", "name": "Camila Barreto" }
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Coronel José Eusébio, 95, Casa 13",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01239-030",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.5416,
+        "longitude": -46.6572
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+5511993995170",
+        "contactType": "customer service",
+        "email": "partner@partnercertificadoradigital.com",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      }],
+      "founder": { "@type": "Person", "name": "Camila Barreto" },
+      "sameAs": []
     },
     {
       "@type": "Service",
@@ -344,22 +381,64 @@
     .faixa-confianca-grid{flex-direction:column;align-items:flex-start;gap:14px;}
   }
 
-  /* ===== Prova social ===== */
-  .selos-confianca{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-bottom:60px;opacity:0.85;}
-  .selo-confianca{display:flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--tinta-suave);}
-  .selo-confianca svg{width:20px;height:20px;stroke:var(--verde-800);}
+  /* ===== Sobre a Partner (institucional) ===== */
+  .sobre-partner-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center;}
+  .sobre-partner-lista{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;margin-top:8px;}
+  .sobre-partner-lista li{
+    display:flex;gap:10px;align-items:flex-start;font-size:0.94rem;color:var(--tinta);
+    background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio-sm);
+    padding:14px 16px;
+  }
+  .sobre-partner-lista svg{width:18px;height:18px;stroke:var(--verde-800);flex-shrink:0;margin-top:2px;}
+  @media (max-width:760px){
+    .sobre-partner-grid{grid-template-columns:1fr;gap:30px;}
+    .sobre-partner-lista{grid-template-columns:1fr;}
+  }
 
-  .empresas-lista{
-    columns:3;column-gap:48px;max-width:960px;margin:0 auto;
+  /* ===== Credenciamento ICP-Brasil ===== */
+  .credenciamento{
+    background:var(--bg-alt);border:1px solid var(--borda);border-radius:24px;
+    padding:56px 48px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;
+    max-width:960px;margin:0 auto;
   }
-  .empresas-lista li{
-    font-family:var(--fonte-display);font-size:0.98rem;font-weight:400;
-    color:var(--tinta-suave);letter-spacing:0.01em;
-    padding:14px 0;border-bottom:1px solid var(--borda);
-    break-inside:avoid;
+  .credenciamento-selo{
+    width:120px;height:120px;border-radius:50%;flex-shrink:0;
+    background:radial-gradient(circle at 30% 30%, var(--dourado-claro), var(--dourado) 65%, var(--dourado-escuro) 100%);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px -8px rgba(122,95,18,0.35);
+    position:relative;
   }
-  @media (max-width:960px){.empresas-lista{columns:2;}}
-  @media (max-width:600px){.empresas-lista{columns:1;}}
+  .credenciamento-selo::before{
+    content:"";position:absolute;inset:6px;border-radius:50%;
+    border:1.5px dashed rgba(255,255,255,0.55);
+  }
+  .credenciamento-selo svg{width:52px;height:52px;stroke:var(--verde-900);fill:none;position:relative;z-index:1;}
+  .credenciamento h2{margin-bottom:16px;}
+  .credenciamento p{color:var(--tinta-suave);font-size:0.98rem;margin-bottom:12px;}
+  .credenciamento p:last-child{margin-bottom:0;}
+  .credenciamento strong{color:var(--verde-900);}
+  @media (max-width:760px){
+    .credenciamento{grid-template-columns:1fr;gap:24px;padding:40px 28px;text-align:center;}
+    .credenciamento-selo{margin:0 auto;}
+  }
+
+  /* ===== Dados da Empresa ===== */
+  .dados-empresa-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .dado-card{
+    background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);
+    padding:26px 24px;transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .dado-card:hover{transform:translateY(-2px);box-shadow:var(--sombra-sm);}
+  .dado-card .icone-box{width:40px;height:40px;margin-bottom:14px;}
+  .dado-card .icone-box svg{width:20px;height:20px;}
+  .dado-card h3{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--tinta-suave);margin-bottom:8px;font-family:var(--fonte-corpo);font-weight:700;}
+  .dado-card p, .dado-card address{font-size:0.98rem;color:var(--verde-900);font-style:normal;line-height:1.5;font-weight:500;word-break:break-word;}
+  .dado-card a{color:var(--verde-900);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s;}
+  .dado-card a:hover{border-bottom-color:var(--dourado);}
+  @media (max-width:960px){.dados-empresa-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.dados-empresa-grid{grid-template-columns:1fr;}}
 
   /* ===== Oferta / Preços ===== */
   .precos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
@@ -417,14 +496,25 @@
 
   /* ===== Rodapé ===== */
   footer{background:var(--verde-900);color:rgba(255,255,255,0.65);padding:70px 0 30px;}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px;}
+  .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:36px;}
   .footer-logo{display:flex;align-items:center;gap:10px;font-family:var(--fonte-display);font-size:1.2rem;color:var(--branco);font-weight:700;margin-bottom:14px;}
   .footer-col h4{color:var(--branco);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:16px;}
   .footer-col li{margin-bottom:10px;font-size:0.9rem;}
   .footer-col a:hover{color:var(--dourado-claro);}
+  .footer-institucional{
+    border-top:1px solid rgba(255,255,255,0.12);padding-top:22px;margin-bottom:22px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:14px 24px;
+    font-size:0.8rem;color:rgba(255,255,255,0.6);
+  }
+  .footer-institucional div strong{display:block;color:rgba(255,255,255,0.85);font-weight:700;text-transform:uppercase;letter-spacing:0.06em;font-size:0.72rem;margin-bottom:4px;}
+  .footer-institucional a{color:rgba(255,255,255,0.75);}
+  .footer-institucional a:hover{color:var(--dourado-claro);}
   .footer-bottom{
     border-top:1px solid rgba(255,255,255,0.12);padding-top:24px;
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.8rem;
+  }
+  @media (max-width:760px){
+    .footer-institucional{grid-template-columns:1fr 1fr;}
   }
 
   /* ===== Botão flutuante WhatsApp ===== */
@@ -458,7 +548,7 @@
     .beneficios-grid{grid-template-columns:1fr 1fr;}
     .precos-grid{grid-template-columns:1fr 1fr;}
     .card-preco.destaque{transform:none;}
-    .footer-grid{grid-template-columns:1fr 1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
   }
   @media (max-width:600px){
     .section{padding:64px 0;}
@@ -466,24 +556,13 @@
     .precos-grid{grid-template-columns:1fr;}
     .sobre-stats{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column;align-items:flex-start;}
     .hero{padding:70px 0 80px;}
     .cta-final{padding:50px 24px;margin:0 16px;}
   }
 </style>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N8SS9C7B');</script>
-<!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8SS9C7B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 
 <header>
   <div class="nav-wrap container">
@@ -494,9 +573,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="links" id="nav-menu" aria-label="Menu principal">
       <a href="#beneficios">Benefícios</a>
       <a href="#sobre">Sobre</a>
-      <a href="#depoimentos">Empresas Atendidas</a>
+      <a href="#credenciamento">Credenciamento</a>
       <a href="#precos">Certificados</a>
       <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
     </nav>
     <div class="nav-actions">
       <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="btn btn-wpp" style="padding:11px 22px;font-size:0.88rem;">Falar no WhatsApp</a>
@@ -649,50 +729,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<section class="section" id="sobre-partner" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="sobre-partner-grid">
+      <div data-reveal>
+        <span class="eyebrow">A empresa</span>
+        <h2>Sobre a Partner Certificadora Digital</h2>
+        <p style="color:var(--tinta-suave);margin-bottom:14px;">A <strong>Partner Certificadora Digital LTDA</strong> é especializada na emissão, renovação e validação de <strong>Certificados Digitais ICP-Brasil</strong> — e-CPF e e-CNPJ, nos formatos A1 e A3 — para pessoas físicas e jurídicas em São Paulo e em todo o Brasil.</p>
+        <p style="color:var(--tinta-suave);margin-bottom:14px;">Atuamos com <strong>atendimento por videoconferência e presencial</strong>, oferecendo um processo seguro, rápido e totalmente conforme as normas do <strong>Instituto Nacional de Tecnologia da Informação (ITI)</strong>.</p>
+        <p style="color:var(--tinta-suave);">Nosso compromisso é proporcionar atendimento humanizado, agilidade na emissão de certificado digital e total segurança durante todo o processo.</p>
+      </div>
+      <ul class="sobre-partner-lista" data-reveal>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento especializado</li>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento por videoconferência</li>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Emissão rápida</li>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Segurança ICP-Brasil</li>
+        <li style="grid-column:1/-1;"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte durante todo o processo, do início ao fim</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <div class="faixa-confianca">
   <div class="container faixa-confianca-grid">
-    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v4l3 3M12 2a10 10 0 100 20 10 10 0 000-20z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Quase 10 anos de experiência</div>
-    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento Humanizado</div>
-    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.4 8.4-7 11-3.6-2.6-7-6-7-11V5l7-3z" stroke-width="1.6" stroke-linejoin="round"/></svg>Certificação ICP-Brasil</div>
-    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke-width="1.6" stroke-linejoin="round"/></svg>Suporte Especializado</div>
-    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M23 7l-7 5 7 5V7zM14 5H3a2 2 0 00-2 2v10a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2z" stroke-width="1.6" stroke-linejoin="round"/></svg>Emissão por Videoconferência</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke-width="1.6"/><path d="M9 9h6M9 13h6M9 17h4" stroke-width="1.6" stroke-linecap="round"/></svg>CNPJ 67.299.382/0001-77</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento especializado</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.4 8.4-7 11-3.6-2.6-7-6-7-11V5l7-3z" stroke-width="1.6" stroke-linejoin="round"/></svg>Emissão conforme ICP-Brasil</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M23 7l-7 5 7 5V7zM14 5H3a2 2 0 00-2 2v10a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2z" stroke-width="1.6" stroke-linejoin="round"/></svg>Atendimento por videoconferência</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke-width="1.6" stroke-linejoin="round"/></svg>Suporte via WhatsApp</div>
+    <div class="faixa-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s-8-7-8-13a8 8 0 0116 0c0 6-8 13-8 13z" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="3" stroke-width="1.6"/></svg>Atendimento em todo o Brasil</div>
   </div>
 </div>
 
-<section class="section" id="depoimentos">
+<section class="section" id="credenciamento">
   <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow" style="justify-content:center;display:flex;">Confiança</span>
-      <h2>Empresas Atendidas</h2>
-      <p class="lead" style="margin:0 auto;">Escritórios de contabilidade, empresas e profissionais liberais que já confiam na Partner.</p>
+    <div class="credenciamento" data-reveal>
+      <div class="credenciamento-selo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l7 3v6c0 5-3.4 8.4-7 11-3.6-2.6-7-6-7-11V5l7-3z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <div>
+        <span class="eyebrow">Credenciamento ICP-Brasil</span>
+        <h2>Certificados AC SyngularID, com validade jurídica em todo o Brasil</h2>
+        <p>A <strong>Partner Certificadora Digital LTDA</strong> atua na <strong>emissão e renovação de certificados digitais ICP-Brasil</strong> — e-CPF e e-CNPJ, nos formatos A1 e A3 — em parceria com Autoridade de Registro credenciada pelo Instituto Nacional de Tecnologia da Informação (ITI).</p>
+        <p>Os certificados emitidos por meio dessa parceria são <strong>certificados AC SyngularID</strong>, Autoridade Certificadora de 2º nível credenciada pela ICP-Brasil (CNPJ 27.637.943/0001-86), sob supervisão direta do ITI. Todos possuem <strong>plena validade jurídica</strong> em todo o território nacional, conforme a Medida Provisória nº 2.200-2/2001.</p>
+      </div>
     </div>
-    <div class="selos-confianca">
-      <div class="selo-confianca"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.4 8.4-7 11-3.6-2.6-7-6-7-11V5l7-3z" stroke-width="1.6" stroke-linejoin="round"/></svg>Padrão ICP-Brasil</div>
-      <div class="selo-confianca"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke-width="1.6"/></svg>Dados protegidos</div>
-      <div class="selo-confianca"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke-width="1.6" stroke-linejoin="round"/></svg>Suporte humano</div>
-    </div>
-    <ul class="empresas-lista">
-      <li>Julia Yoko Nishi</li>
-      <li>A. L. V. — Atendimento Comercial Ltda</li>
-      <li>Oruam — Promoção de Vendas Ltda</li>
-      <li>S.P.R. Urologistas Associados S/S Ltda</li>
-      <li>Renato de Oliveira Branco</li>
-      <li>Nunes &amp; Santos S/S Ltda</li>
-      <li>J.D. Santos Sociedade Individual de Advocacia</li>
-      <li>Clin-Eye Clínica Oftalmológica Sociedade Simples</li>
-      <li>Nexo Profixadores</li>
-      <li>Santé Plus Serviços Médicos S/S Ltda</li>
-      <li>Adriana dos Santos Forseto</li>
-      <li>Vida e Saúde Suporte Avançado e Treinamento Ltda</li>
-      <li>Estácio Henrique de Almeida Santana</li>
-      <li>Mariana Nishi</li>
-      <li>Urso Shop Comercial Ltda</li>
-      <li>DKR Instrumentação Cirúrgica Ltda</li>
-      <li>Solo Brasil Ltda</li>
-      <li>Reabilit Artigos Médicos e Ortopédicos Ltda</li>
-      <li>Embaladisk Distribuidora Ltda</li>
-      <li>Marcenaria Jessy Ltda</li>
-    </ul>
   </div>
 </section>
 
@@ -714,7 +798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Assinatura de documentos</li>
           <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte de instalação</li>
         </ul>
-        <a href="/e-cpf-a1.html" class="btn btn-outline-dark">Quero este</a>
+        <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20e-CPF%20A1." class="btn btn-outline-dark">Quero este</a>
       </div>
       <div class="card-preco destaque" data-reveal>
         <span class="badge-popular">Mais procurado</span>
@@ -815,6 +899,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<section class="section" id="contato" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" style="justify-content:center;display:flex;">Transparência</span>
+      <h2>Dados da Empresa</h2>
+      <p class="lead" style="margin:0 auto;">Informações institucionais completas para sua segurança e confiança.</p>
+    </div>
+    <div class="dados-empresa-grid">
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Razão Social</h3>
+        <p>Partner Certificadora Digital LTDA</p>
+      </div>
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke-width="1.6"/><path d="M9 9h6M9 13h6M9 17h4" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>CNPJ</h3>
+        <p>67.299.382/0001-77</p>
+      </div>
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s-8-7-8-13a8 8 0 0116 0c0 6-8 13-8 13z" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="3" stroke-width="1.6"/></svg></div>
+        <h3>Endereço</h3>
+        <address>Rua Coronel José Eusébio, 95<br>Casa 13 — Higienópolis<br>São Paulo/SP — CEP 01239-030</address>
+      </div>
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Telefone / WhatsApp</h3>
+        <p><a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital.">(11) 99399-5170</a></p>
+      </div>
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.6" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>E-mail</h3>
+        <p><a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a></p>
+      </div>
+      <div class="dado-card" data-reveal>
+        <div class="icone-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Horário de Atendimento</h3>
+        <p>Segunda a sexta<br>08h às 18h</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="padding-top:0;">
   <div class="cta-final" data-reveal>
     <span class="eyebrow" style="justify-content:center;display:flex;">Pronto para começar?</span>
@@ -836,39 +962,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="logo-192.png" alt="Partner Certificadora Digital" width="34" height="34" loading="lazy" decoding="async" style="width:34px;height:34px;object-fit:contain;">
           Partner Certificadora Digital
         </div>
-        <p style="font-size:0.88rem;max-width:280px;">Certificação digital e-CPF e e-CNPJ para contadores, médicos e empresas — com suporte direto e sem burocracia.</p>
+        <p style="font-size:0.88rem;max-width:280px;">Certificado Digital ICP-Brasil e-CPF e e-CNPJ para contadores, médicos e empresas — com suporte direto e sem burocracia.</p>
+        <p style="font-size:0.78rem;margin-top:14px;color:rgba(255,255,255,0.5);">Certificados AC SyngularID (CNPJ 27.637.943/0001-86), Autoridade Certificadora credenciada pela ICP-Brasil.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#precos">Certificados</a></li>
+          <li><a href="#credenciamento">Credenciamento</a></li>
+          <li><a href="#faq">Dúvidas Frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+        </ul>
       </div>
       <div class="footer-col">
         <h4>Certificados</h4>
         <ul>
-          <li><a href="/e-cpf-a1.html">e-CPF A1</a></li>
+          <li><a href="e-cpf-a1.html">e-CPF A1</a></li>
           <li><a href="#precos">e-CPF A3</a></li>
           <li><a href="#precos">e-CNPJ A1</a></li>
           <li><a href="#precos">e-CNPJ A3</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Empresa</h4>
-        <ul>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#depoimentos">Empresas Atendidas</a></li>
-          <li><a href="#faq">Dúvidas frequentes</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
         <h4>Contato</h4>
         <ul>
           <li><a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital.">WhatsApp: (11) 99399-5170</a></li>
+          <li>Telefone: (11) 99399-5170</li>
           <li><a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a></li>
-          <li><a href="#" aria-disabled="true">Instagram: @partnercertificadoradigital</a></li>
-          <li>Seg. a Sex., 9h às 18h</li>
-          <li>Endereço: Atendimento online em todo o Brasil</li>
+          <li>Seg. a Sex., 08h às 18h</li>
+          <li>Atendimento em todo o Brasil</li>
         </ul>
       </div>
     </div>
+    <div class="footer-institucional">
+      <div>
+        <strong>Razão Social</strong>
+        Partner Certificadora Digital LTDA
+      </div>
+      <div>
+        <strong>CNPJ</strong>
+        67.299.382/0001-77
+      </div>
+      <div>
+        <strong>Endereço</strong>
+        Rua Coronel José Eusébio, 95, Casa 13 — Higienópolis, São Paulo/SP — CEP 01239-030
+      </div>
+      <div>
+        <strong>Horário</strong>
+        Segunda a sexta, 08h às 18h
+      </div>
+    </div>
     <div class="footer-bottom">
-      <span>© 2026 Partner Certificadora Digital. Todos os direitos reservados.</span>
-      <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      <span>© 2026 Partner Certificadora Digital LTDA. Todos os direitos reservados.</span>
+      <span style="display:flex;gap:18px;flex-wrap:wrap;">
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="termos-de-uso.html">Termos de Uso</a>
+        <a href="politica-de-cookies.html">Política de Cookies</a>
+        <a href="sitemap.xml">Mapa do Site</a>
+      </span>
     </div>
   </div>
 </footer>
