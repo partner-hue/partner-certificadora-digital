@@ -130,29 +130,6 @@
   .hero-preco .prazo{font-size:0.85rem;color:var(--tinta-suave);margin-bottom:24px;}
   .hero-preco .btn{width:100%;}
 
-  .form-card{background:var(--branco);border:1px solid var(--borda);border-radius:20px;padding:36px 34px;box-shadow:var(--sombra);position:relative;}
-  .form-card .form-eyebrow{display:inline-block;background:var(--verde-100);color:var(--verde-800);padding:5px 12px;border-radius:100px;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:12px;}
-  .form-card h3{font-family:var(--fonte-display);font-size:1.5rem;color:var(--verde-900);margin-bottom:6px;line-height:1.2;font-weight:600;}
-  .form-card > p.form-sub{font-size:0.9rem;color:var(--tinta-suave);margin-bottom:22px;}
-  .form-native .field{margin-bottom:14px;}
-  .form-native label{display:block;font-size:0.78rem;font-weight:700;color:var(--verde-900);margin-bottom:6px;letter-spacing:0.02em;}
-  .form-native input, .form-native select{width:100%;padding:12px 14px;font-family:var(--fonte-corpo);font-size:0.94rem;background:var(--bg);border:1.5px solid var(--borda);border-radius:10px;color:var(--tinta);transition:border-color .15s, background .15s;-webkit-appearance:none;appearance:none;}
-  .form-native select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230b3d2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;cursor:pointer;}
-  .form-native input:focus, .form-native select:focus{outline:none;border-color:var(--verde-800);background:var(--branco);}
-  .form-native .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .form-native .honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
-  .form-native button[type="submit"]{width:100%;background:var(--dourado);color:var(--verde-900);padding:15px 24px;border:none;border-radius:100px;font-family:var(--fonte-corpo);font-size:1rem;font-weight:700;cursor:pointer;box-shadow:var(--sombra-sm);transition:transform .18s, box-shadow .18s, background .18s;margin-top:8px;}
-  .form-native button[type="submit"]:hover:not(:disabled){background:var(--dourado-claro);transform:translateY(-2px);box-shadow:var(--sombra);}
-  .form-native button[type="submit"]:disabled{opacity:0.55;cursor:wait;transform:none;}
-  .form-native .consent{font-size:0.72rem;color:var(--tinta-suave);margin-top:14px;line-height:1.55;}
-  .form-native .consent a{color:var(--verde-800);text-decoration:underline;}
-  .form-native .form-status{padding:14px 16px;border-radius:10px;font-size:0.9rem;margin-top:12px;display:none;}
-  .form-native .form-status.success{background:#e7f5ec;color:#0b3d2e;border-left:3px solid #0b8a3e;display:block;}
-  .form-native .form-status.error{background:#fbeae6;color:#8a2a1e;border-left:3px solid #c04a3a;display:block;}
-  .form-secondary-cta{text-align:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--borda);font-size:0.82rem;color:var(--tinta-suave);}
-  .form-secondary-cta a{color:var(--verde-800);font-weight:600;text-decoration:underline;}
-
-
   .section{padding:80px 0;}
   .section-alt{background:var(--bg-alt);}
   .section-head{margin-bottom:44px;max-width:720px;}
@@ -237,34 +214,22 @@
     <div class="hero-grid">
       <div>
         <span class="eyebrow">Programa Partner</span>
-        <h1><em>Certificado Digital para Contadores</em>: parceria com atendimento dedicado</h1>
-        <p class="lead">Escritórios de contabilidade que precisam de agilidade na emissão de certificados digitais para seus clientes contam com um programa de parceria e canal dedicado.</p>
-        <div class="hero-ctas"><a href="#formulario" class="btn btn-primary" data-conversion="scroll-form-hero">Solicitar contato</a><a href="#como-funciona" class="btn btn-outline">Ver como funciona</a></div>
+        <h1>Certificado digital <em>para contadores</em>: parceria com atendimento dedicado</h1>
+        <p class="lead">Escritórios de contabilidade que precisam de agilidade e previsibilidade na emissão de certificados digitais para seus clientes contam com um programa de parceria e um canal direto pelo WhatsApp.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20parceria%20para%20certificados%20digitais.%20Pode%20me%20explicar%20como%20funciona%3F" class="btn btn-primary" data-conversion="whatsapp-hero">Falar sobre parceria</a>
+          <a href="#como-funciona" class="btn btn-outline">Ver como funciona</a>
+        </div>
         <p class="microcopy-cnpj">Atendimento por <strong>Partner Certificadora Digital LTDA</strong> — CNPJ 67.299.382/0001-77. <strong>Empresa privada</strong>. Não somos órgão público, Receita Federal, gov.br ou entidade governamental. Certificados ICP-Brasil emitidos por parceiro credenciado.</p>
       </div>
-      <div class="form-card" id="formulario">
-      <span class="form-eyebrow">Solicitar contato</span>
-      <h3>Fale sobre a parceria</h3>
-      <p class="form-sub">Preencha seus dados e nossa equipe entra em contato para apresentar condições comerciais dedicadas ao seu escritório.</p>
-      <form class="form-native" id="form-parceria" action="https://api.web3forms.com/submit" method="POST" novalidate>
-        <input type="hidden" name="access_key" value="32b4c577-33ec-4386-957b-8e879e405595">
-        <input type="hidden" name="subject" value="[Site] Novo lead — Parceria escritório contábil">
-        <input type="hidden" name="from_name" value="Site Partner Certificadora Digital">
-        <input type="hidden" name="redirect" value="false">
-        <input type="hidden" name="origem" value="form-parceria">
-        <div class="honeypot" aria-hidden="true"><label>Não preencha:<input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
-        <div class="field"><label for="nome-form-parceria">Nome completo *</label><input type="text" id="nome-form-parceria" name="nome" required minlength="3" placeholder="Seu nome" autocomplete="name"></div>
-        <div class="field"><label for="email-form-parceria">E-mail *</label><input type="email" id="email-form-parceria" name="email" required placeholder="seu@email.com" autocomplete="email"></div>
-        <div class="field-row">
-          <div class="field"><label for="tel-form-parceria">Telefone / WhatsApp *</label><input type="tel" id="tel-form-parceria" name="telefone" required placeholder="(11) 99999-9999" autocomplete="tel"></div>
-          <div class="field"><label for="tipo-form-parceria">Tipo de certificado *</label><select id="tipo-form-parceria" name="tipo_certificado" required><option value="Parceria escritório contábil" selected>Parceria escritório contábil</option><option value="Volume alto de certificados">Volume alto de certificados</option><option value="Outro">Outro</option></select></div>
-        </div>
-        <button type="submit" data-conversion="form-submit-form-parceria">Solicitar contato</button>
-        <p class="consent">Ao enviar, você concorda com nossa <a href="politica-de-privacidade.html">Política de Privacidade</a> e autoriza o contato pela equipe da Partner Certificadora Digital LTDA.</p>
-        <div class="form-status" id="status-form-parceria" role="status" aria-live="polite"></div>
-      </form>
-      <div class="form-secondary-cta">Prefere falar direto? <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." rel="noopener" data-conversion="whatsapp-secondary-form-parceria">Atendimento também pelo WhatsApp</a></div>
-    </div></div>
+      <div class="hero-preco">
+        <div class="badge">Parceria</div>
+        <h3>Programa Partner</h3>
+        <div class="valor">Condições<small> comerciais dedicadas</small></div>
+        <p class="prazo">Volume, prazo e forma de pagamento negociados por escritório</p>
+        <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20parceria%20para%20certificados%20digitais.%20Pode%20me%20explicar%20como%20funciona%3F" class="btn btn-primary" data-conversion="whatsapp-preco">Falar sobre parceria</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -376,7 +341,7 @@
       <span class="eyebrow">Pronto para começar?</span>
       <h2 style="margin:12px 0 14px;">Solicite seu cadastro no Programa Partner agora</h2>
       <p>Fale com nosso time pelo WhatsApp e receba orientação sobre documentos, prazo e forma de pagamento.</p>
-      <a href="#formulario" class="btn btn-primary" data-conversion="scroll-form-final">Solicitar contato</a>
+      <a href="https://wa.me/5511993995170?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20parceria%20para%20certificados%20digitais.%20Pode%20me%20explicar%20como%20funciona%3F" class="btn btn-primary" data-conversion="whatsapp-final">Falar com nosso time</a>
       <p class="microcopy">Atendimento por <strong>Partner Certificadora Digital LTDA</strong> — CNPJ 67.299.382/0001-77. Empresa privada. Certificados ICP-Brasil emitidos por parceiro credenciado.</p>
     </div>
   </div>
@@ -416,37 +381,6 @@ document.querySelectorAll('[data-conversion]').forEach(el => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event: 'conversao_cta', cta_id: nome, cta_pagina: 'certificado-digital-para-contadores'});
     if (typeof gtag === 'function') gtag('event', 'conversao_cta', {cta_id: nome, cta_pagina: 'certificado-digital-para-contadores'});
-  });
-});
-</script>
-
-<script>
-document.querySelectorAll('form.form-native').forEach(function(form) {
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var status = form.querySelector('.form-status');
-    var button = form.querySelector('button[type="submit"]');
-    var originalLabel = button.textContent;
-    status.className = 'form-status'; status.textContent = '';
-    button.disabled = true; button.textContent = 'Enviando...';
-    var data = new FormData(form);
-    fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
-      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, body:j}; }); })
-      .then(function(res){
-        if (res.ok && res.body.success) {
-          status.className = 'form-status success';
-          status.textContent = 'Recebemos sua solicitação. Nossa equipe entrará em contato em breve pelo canal informado.';
-          form.reset(); button.textContent = 'Solicitação enviada ✓';
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({event:'lead_form_submit', form_id:form.id, cta_pagina:document.title});
-          if (typeof gtag === 'function') gtag('event', 'lead_form_submit', {form_id:form.id});
-        } else { throw new Error((res.body && res.body.message) || 'Erro no envio.'); }
-      })
-      .catch(function(err){
-        status.className = 'form-status error';
-        status.textContent = 'Não foi possível enviar agora. Tente novamente em instantes ou use o atendimento pelo WhatsApp abaixo.';
-        button.disabled = false; button.textContent = originalLabel;
-      });
   });
 });
 </script>
