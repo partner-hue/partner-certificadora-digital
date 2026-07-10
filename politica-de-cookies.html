@@ -5,191 +5,384 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#06251c">
 <title>Política de Cookies | Partner Certificadora Digital</title>
-<meta name="description" content="Política de Cookies da Partner Certificadora Digital LTDA — quais cookies utilizamos e como você pode gerenciá-los.">
+<meta name="description" content="Como o site da Partner Certificadora Digital utiliza cookies e tecnologias de armazenamento para melhorar a experiência de navegação e análise.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://partnercertificadoradigital.com/politica-de-cookies.html">
-
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Partner Certificadora Digital">
+<meta property="og:title" content="Política de Cookies | Partner Certificadora Digital">
+<meta property="og:description" content="Como o site da Partner Certificadora Digital utiliza cookies e tecnologias de armazenamento para melhorar a experiência de navegação e análise.">
+<meta property="og:image" content="https://partnercertificadoradigital.com/logo-512.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://partnercertificadoradigital.com/politica-de-cookies.html">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="logo-180.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --verde-900:#06251c;--verde-800:#0b3d2e;--verde-100:#e7efe9;
-    --bg:#f8f7f1;--bg-alt:#f1efe4;
-    --dourado:#c9a227;--dourado-claro:#e6c766;--dourado-escuro:#7a5f12;
-    --tinta:#132018;--tinta-suave:#4a5a52;--borda:#e1ddcf;--branco:#ffffff;
-    --fonte-display:'Fraunces', Georgia, serif;
-    --fonte-corpo:'Manrope', -apple-system, sans-serif;
-    --raio:14px;--raio-sm:8px;--max:820px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:var(--fonte-corpo);color:var(--tinta);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;}
-  a{color:var(--verde-800);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s;}
-  a:hover{border-bottom-color:var(--dourado);}
-  .container{max-width:var(--max);margin:0 auto;padding:0 24px;}
-  h1,h2,h3{font-family:var(--fonte-display);color:var(--verde-900);line-height:1.2;font-weight:600;}
-  h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px;}
-  h2{font-size:1.4rem;margin:36px 0 14px;}
-  h3{font-size:1.1rem;margin:24px 0 10px;}
-  p, li{color:var(--tinta-suave);margin-bottom:14px;}
-  ul, ol{padding-left:22px;margin-bottom:14px;}
-  li{margin-bottom:8px;}
-  strong{color:var(--verde-900);}
-  header{background:linear-gradient(135deg, var(--verde-800), var(--verde-900));color:var(--branco);padding:60px 0 50px;margin-bottom:50px;}
-  header .container{max-width:var(--max);}
-  header h1{color:var(--branco);}
-  header p{color:rgba(255,255,255,0.7);font-size:0.95rem;margin:0;}
-  .voltar{display:inline-flex;align-items:center;gap:6px;color:var(--dourado-claro);font-size:0.9rem;font-weight:600;margin-bottom:20px;border:none;}
-  .voltar:hover{color:var(--branco);}
-  main{padding-bottom:80px;}
-  .destaque{background:var(--bg-alt);border-left:3px solid var(--dourado);padding:20px 24px;border-radius:var(--raio-sm);margin:24px 0;}
-  .destaque p:last-child{margin-bottom:0;}
-  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:0.92rem;}
-  th, td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--borda);vertical-align:top;}
-  th{background:var(--bg-alt);font-family:var(--fonte-display);color:var(--verde-900);font-weight:600;font-size:0.9rem;}
-  td{color:var(--tinta-suave);}
-  footer{background:var(--verde-900);color:rgba(255,255,255,0.65);padding:40px 0;font-size:0.85rem;text-align:center;}
-  footer a{color:rgba(255,255,255,0.75);border:none;}
-  footer a:hover{color:var(--dourado-claro);}
-  @media (max-width:600px){header{padding:40px 0 30px;margin-bottom:30px;}h2{font-size:1.25rem;margin:28px 0 12px;}table{font-size:0.82rem;}th,td{padding:10px 8px;}}
+:root{
+  --verde-tinta:#06251c;--verde-papel:#0b3d2e;--verde-claro:#eef4ee;
+  --dourado:#c9a227;--dourado-claro:#e6c766;--dourado-fosco:#8a6f1a;
+  --cru:#f5f2e8;--cru-alt:#ede7d6;
+  --tinta:#132018;--tinta-suave:#4a5a52;--hairline:#d4cebe;--branco:#ffffff;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Manrope',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  --s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:64px;--s6:96px;--s7:144px;
+  --max:1180px;--gutter:32px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:var(--sans);color:var(--tinta);background:var(--cru);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul,ol{list-style:none;}
+::selection{background:var(--dourado);color:var(--verde-tinta);}
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);}
+
+h1,h2,h3,h4{font-family:var(--serif);color:var(--verde-tinta);font-weight:500;letter-spacing:-0.015em;line-height:1.15;}
+h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:400;line-height:1.02;letter-spacing:-0.025em;}
+h1 em{font-style:italic;font-weight:400;color:var(--dourado-claro);}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:500;line-height:1.1;letter-spacing:-0.02em;}
+h2 em{font-style:italic;font-weight:400;color:var(--dourado-fosco);}
+h3{font-family:var(--serif);font-size:1.25rem;font-weight:600;line-height:1.25;letter-spacing:-0.01em;}
+h4{font-family:var(--serif);font-size:1.05rem;font-weight:600;}
+p{color:var(--tinta-suave);line-height:1.65;margin-bottom:14px;}
+p.lede{font-size:1.125rem;line-height:1.6;color:var(--tinta);}
+strong,b{color:var(--verde-tinta);font-weight:600;}
+a.link{color:var(--verde-papel);border-bottom:1px solid var(--dourado);padding-bottom:1px;transition:color .2s;}
+a.link:hover{color:var(--dourado-fosco);border-color:var(--dourado-fosco);}
+
+.eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--dourado-fosco);display:inline-flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:20px;height:1px;background:var(--dourado-fosco);display:block;}
+.eyebrow.on-dark{color:var(--dourado-claro);}
+.eyebrow.on-dark::before{background:var(--dourado-claro);}
+.mono{font-family:var(--mono);font-size:0.88em;letter-spacing:-0.01em;}
+
+/* TOPBAR */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(245,242,232,0.92);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--hairline);}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px var(--gutter);max-width:var(--max);margin:0 auto;gap:24px;}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--verde-tinta);letter-spacing:-0.01em;line-height:1;}
+.brand-logo{width:38px;height:38px;object-fit:contain;flex-shrink:0;display:block;}
+.brand-nome small{display:block;font-family:var(--sans);font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--dourado-fosco);margin-top:2px;}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-family:var(--sans);font-size:0.86rem;font-weight:500;color:var(--tinta);position:relative;transition:color .2s;}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--dourado);transform:scaleX(0);transform-origin:left;transition:transform .25s ease;}
+.nav-links a:hover{color:var(--verde-tinta);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.cta-nav{background:var(--verde-tinta);color:var(--cru);padding:10px 20px;border-radius:999px;font-family:var(--sans);font-size:0.85rem;font-weight:600;transition:background .2s,transform .15s;}
+.cta-nav:hover{background:var(--verde-papel);transform:translateY(-1px);}
+.menu-toggle{display:none;}
+@media (max-width:900px){
+  .nav-links{display:none;}
+  .menu-toggle{display:flex;flex-direction:column;gap:4px;width:32px;height:32px;justify-content:center;align-items:center;}
+  .menu-toggle span{width:20px;height:1.5px;background:var(--verde-tinta);}
+  .topbar.menu-open .nav-links{display:flex;position:absolute;top:100%;left:0;right:0;background:var(--cru);flex-direction:column;align-items:stretch;padding:24px var(--gutter);gap:20px;border-bottom:1px solid var(--hairline);}
+  .topbar.menu-open .nav-links a{padding:4px 0;font-size:1rem;}
+}
+
+/* PAGE HERO */
+.page-hero{background:var(--verde-tinta);color:var(--cru);padding:var(--s6) 0 var(--s6);position:relative;overflow:hidden;}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(180deg,transparent 96%,rgba(201,162,39,0.04) 100%);background-size:100% 32px;opacity:0.6;pointer-events:none;}
+.page-hero .container{position:relative;z-index:1;}
+.page-hero .voltar{display:inline-flex;align-items:center;gap:6px;color:var(--dourado-claro);font-family:var(--sans);font-size:0.82rem;font-weight:600;margin-bottom:var(--s3);transition:color .2s;}
+.page-hero .voltar:hover{color:var(--cru);}
+.page-hero h1{color:var(--cru);margin-bottom:var(--s3);max-width:900px;}
+.page-hero p.lede{color:rgba(245,242,232,0.75);max-width:640px;font-size:1.1rem;line-height:1.55;}
+.page-hero .hero-eyebrow{color:var(--dourado-claro);font-family:var(--sans);font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;margin-bottom:var(--s3);}
+.page-hero .hero-eyebrow::before{content:"";width:32px;height:1px;background:var(--dourado-claro);}
+
+/* SECTIONS */
+section{padding:var(--s6) 0;}
+.section-head{max-width:640px;margin-bottom:var(--s5);}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head p.lede{margin-top:var(--s2);color:var(--tinta-suave);}
+
+.bg-white{background:var(--branco);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);}
+.bg-cru{background:var(--cru);}
+.bg-dark{background:var(--verde-tinta);color:var(--cru);}
+.bg-dark h2{color:var(--cru);}
+.bg-dark p{color:rgba(245,242,232,0.75);}
+
+/* PROSE / CORPO EDITORIAL */
+.prose{max-width:720px;}
+.prose h2{margin:var(--s5) 0 var(--s3);}
+.prose h2:first-child{margin-top:0;}
+.prose h3{margin:var(--s4) 0 var(--s2);color:var(--verde-tinta);}
+.prose p{font-size:1.02rem;line-height:1.75;margin-bottom:var(--s2);color:var(--tinta);}
+.prose p strong{color:var(--verde-tinta);font-weight:600;}
+.prose ul,.prose ol{padding-left:24px;margin-bottom:var(--s3);}
+.prose ul li,.prose ol li{margin-bottom:8px;color:var(--tinta);line-height:1.7;list-style:disc;padding-left:6px;}
+.prose ol li{list-style:decimal;}
+.prose a{color:var(--verde-papel);border-bottom:1px solid var(--dourado);}
+.prose a:hover{color:var(--dourado-fosco);border-color:var(--dourado-fosco);}
+.prose .dropcap::first-letter{font-family:var(--serif);font-size:4rem;font-weight:400;float:left;line-height:0.9;margin-right:8px;margin-top:4px;color:var(--dourado-fosco);font-style:italic;}
+
+/* Bloco institucional / legal / destaque */
+.destaque{background:var(--cru-alt);border-left:3px solid var(--dourado);padding:var(--s3);border-radius:2px;margin:var(--s3) 0;}
+.destaque p{margin:0;font-size:0.95rem;color:var(--tinta);line-height:1.65;}
+.destaque p + p{margin-top:8px;}
+.destaque .caption{font-family:var(--mono);font-size:0.74rem;color:var(--dourado-fosco);margin-top:6px;}
+.destaque strong{color:var(--verde-tinta);}
+
+/* Aviso "empresa privada" */
+.aviso-privado{background:#fef7e6;border-left:3px solid var(--dourado-fosco);padding:18px 22px;border-radius:2px;margin:var(--s3) 0;font-size:0.94rem;line-height:1.6;color:var(--tinta);}
+.aviso-privado strong{color:var(--verde-tinta);}
+
+/* Trust list (linhas com borda) */
+.trust-list{margin:var(--s3) 0;}
+.trust-list li{padding:16px 0;border-bottom:1px solid var(--hairline);display:flex;gap:14px;align-items:baseline;font-size:0.98rem;color:var(--tinta);line-height:1.6;}
+.trust-list li:last-child{border-bottom:0;}
+.trust-list li::before{content:"→";color:var(--dourado-fosco);font-weight:600;flex-shrink:0;font-family:var(--mono);}
+.trust-list li strong{color:var(--verde-tinta);font-weight:600;}
+
+/* Steps numerados */
+.steps{margin:var(--s4) 0;counter-reset:passo;}
+.step-item{position:relative;padding:24px 24px 24px 90px;background:var(--branco);border:1px solid var(--hairline);border-radius:2px;margin-bottom:14px;transition:transform .15s;}
+.step-item::before{counter-increment:passo;content:counter(passo,decimal-leading-zero);position:absolute;left:24px;top:24px;background:transparent;color:var(--dourado-fosco);font-family:var(--mono);font-weight:500;font-size:1.1rem;letter-spacing:0.05em;border:1px solid var(--dourado);border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;}
+.step-item h3{margin:0 0 8px;font-size:1.15rem;color:var(--verde-tinta);}
+.step-item p{margin:0;font-size:0.94rem;color:var(--tinta-suave);line-height:1.6;}
+.step-item p strong{color:var(--verde-tinta);}
+@media (max-width:600px){.step-item{padding:70px 20px 20px;}.step-item::before{left:20px;top:20px;}}
+
+/* FAQ */
+.faq-lista{max-width:780px;margin:0 auto;}
+.faq-item{border-bottom:1px solid var(--hairline);}
+.faq-item summary{padding:var(--s3) 0;cursor:pointer;font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--verde-tinta);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;letter-spacing:-0.005em;line-height:1.3;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-family:var(--sans);font-size:1.4rem;font-weight:300;color:var(--dourado-fosco);flex-shrink:0;}
+.faq-item[open] summary::after{content:"−";}
+.faq-answer{padding:0 0 var(--s3);font-size:0.95rem;color:var(--tinta-suave);line-height:1.7;max-width:620px;}
+.faq-answer p{margin-bottom:10px;color:var(--tinta-suave);}
+.faq-answer p:last-child{margin-bottom:0;}
+.faq-answer strong{color:var(--verde-tinta);}
+.faq-answer a{color:var(--verde-papel);border-bottom:1px solid var(--dourado);}
+.faq-answer ul,.faq-answer ol{padding-left:22px;margin-top:8px;margin-bottom:8px;}
+.faq-answer li{list-style:disc;margin-bottom:6px;}
+
+/* CTA FINAL (cinza escuro) */
+.cta-final{background:var(--verde-tinta);color:var(--cru);padding:var(--s6) 0;text-align:center;}
+.cta-final h2{color:var(--cru);max-width:640px;margin:var(--s2) auto var(--s3);}
+.cta-final h2 em{color:var(--dourado-claro);font-style:italic;}
+.cta-final p{color:rgba(245,242,232,0.7);max-width:520px;margin:0 auto var(--s3);}
+.cta-final .btn-final{display:inline-block;background:var(--dourado);color:var(--verde-tinta);padding:16px 36px;border-radius:2px;font-family:var(--sans);font-weight:700;font-size:0.98rem;letter-spacing:0.03em;transition:background .2s,transform .15s;}
+.cta-final .btn-final:hover{background:var(--dourado-claro);transform:translateY(-1px);}
+.cta-final .cta-mono{font-family:var(--mono);font-size:0.76rem;color:rgba(245,242,232,0.55);margin-top:var(--s3);max-width:520px;margin-left:auto;margin-right:auto;line-height:1.6;}
+.cta-final .cta-mono strong{color:var(--dourado-claro);}
+.cta-final .cta-mono a{color:var(--dourado-claro);text-decoration:underline;}
+
+/* FORM (usado em landings) */
+.form-card{background:var(--cru);color:var(--tinta);padding:var(--s4);border-radius:4px;border-top:3px solid var(--dourado);box-shadow:0 20px 60px -20px rgba(0,0,0,0.4);}
+.form-card-header{margin-bottom:var(--s3);padding-bottom:var(--s2);border-bottom:1px solid var(--hairline);}
+.form-card-eyebrow{font-family:var(--sans);font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--dourado-fosco);margin-bottom:8px;}
+.form-card h3{font-family:var(--serif);font-size:1.35rem;font-weight:500;color:var(--verde-tinta);letter-spacing:-0.01em;line-height:1.2;margin-bottom:6px;}
+.form-card p.form-sub{font-size:0.86rem;color:var(--tinta-suave);margin:0;}
+.form-aviso{background:var(--cru-alt);border-left:2px solid var(--dourado-fosco);padding:12px 14px;font-size:0.76rem;line-height:1.5;color:var(--tinta);margin-bottom:var(--s3);border-radius:2px;}
+.form-aviso strong{color:var(--verde-tinta);font-weight:600;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-family:var(--sans);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--verde-tinta);margin-bottom:6px;}
+.field input,.field select{width:100%;padding:12px 14px;font-family:var(--sans);font-size:0.94rem;background:var(--branco);border:1.5px solid var(--hairline);border-radius:2px;color:var(--tinta);transition:border-color .15s;-webkit-appearance:none;appearance:none;}
+.field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230b3d2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;cursor:pointer;}
+.field input:focus,.field select:focus{outline:none;border-color:var(--verde-tinta);box-shadow:0 0 0 3px rgba(201,162,39,0.15);}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+.btn-submit{width:100%;background:var(--verde-tinta);color:var(--cru);padding:15px 24px;border-radius:2px;font-family:var(--sans);font-size:0.94rem;font-weight:700;letter-spacing:0.03em;cursor:pointer;margin-top:6px;transition:background .2s,transform .15s;}
+.btn-submit:hover:not(:disabled){background:var(--verde-papel);transform:translateY(-1px);}
+.btn-submit:disabled{opacity:0.55;cursor:wait;transform:none;}
+.consent{font-size:0.72rem;color:var(--tinta-suave);margin-top:12px;line-height:1.55;}
+.consent a{color:var(--verde-tinta);text-decoration:underline;}
+.form-status{padding:12px 14px;border-radius:2px;font-size:0.86rem;margin-top:12px;display:none;}
+.form-status.success{background:#e7f5ec;color:#0b3d2e;border-left:3px solid #0b8a3e;display:block;}
+.form-status.error{background:#fbeae6;color:#8a2a1e;border-left:3px solid #c04a3a;display:block;}
+.form-secundario{margin-top:18px;padding-top:14px;border-top:1px solid var(--hairline);font-size:0.78rem;color:var(--tinta-suave);text-align:center;}
+.form-secundario a{color:var(--verde-tinta);font-weight:600;text-decoration:underline;}
+@media (max-width:900px){.field-row{grid-template-columns:1fr;}.form-card{padding:var(--s3);}}
+
+/* FOOTER */
+footer{background:var(--verde-tinta);color:rgba(245,242,232,0.65);padding:var(--s5) 0 var(--s3);border-top:1px solid rgba(212,206,190,0.15);}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--s4);padding-bottom:var(--s4);border-bottom:1px solid rgba(212,206,190,0.15);margin-bottom:var(--s3);}
+.foot-marca{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--cru);margin-bottom:14px;}
+.foot-marca .brand-logo{width:40px;height:40px;filter:brightness(0) invert(1);opacity:0.9;}
+.foot-desc{font-size:0.86rem;color:rgba(245,242,232,0.65);line-height:1.55;max-width:280px;}
+.foot-col h4{font-family:var(--sans);font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--dourado-claro);margin-bottom:14px;}
+.foot-col ul li{margin-bottom:10px;font-size:0.9rem;}
+.foot-col a{color:rgba(245,242,232,0.75);transition:color .2s;}
+.foot-col a:hover{color:var(--dourado-claro);}
+.foot-aviso{background:rgba(255,255,255,0.05);padding:14px 18px;border-left:2px solid var(--dourado);font-size:0.78rem;color:rgba(245,242,232,0.8);line-height:1.6;margin-bottom:var(--s3);border-radius:2px;}
+.foot-aviso strong{color:var(--dourado-claro);}
+.foot-inst{display:grid;grid-template-columns:repeat(4,1fr);gap:14px 24px;padding-top:var(--s3);border-top:1px solid rgba(212,206,190,0.15);font-size:0.78rem;margin-bottom:var(--s3);}
+.foot-inst strong{display:block;color:rgba(245,242,232,0.85);font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;font-size:0.66rem;margin-bottom:4px;}
+.foot-inst .mono-item{font-family:var(--mono);color:rgba(245,242,232,0.75);}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:var(--s3);border-top:1px solid rgba(212,206,190,0.15);font-size:0.76rem;color:rgba(245,242,232,0.55);}
+.foot-bottom a{color:rgba(245,242,232,0.7);}
+.foot-bottom a:hover{color:var(--dourado-claro);}
+.foot-bottom .foot-links{display:flex;gap:20px;flex-wrap:wrap;}
+@media (max-width:900px){.foot-top{grid-template-columns:1fr 1fr;}.foot-inst{grid-template-columns:1fr 1fr;}}
+@media (max-width:560px){.foot-top{grid-template-columns:1fr;}.foot-inst{grid-template-columns:1fr;}}
+
+/* WA FLOAT */
+.wpp-float{position:fixed;bottom:24px;right:24px;z-index:200;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,0.28);transition:transform .2s;}
+.wpp-float:hover{transform:scale(1.08);}
+.wpp-float svg{width:28px;height:28px;fill:#fff;}
+
+/* A11Y */
+:focus-visible{outline:2px solid var(--dourado);outline-offset:3px;border-radius:2px;}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="container">
-    <a href="index.html" class="voltar">← Voltar ao início</a>
-    <h1>Política de Cookies</h1>
-    <p>Partner Certificadora Digital LTDA — CNPJ 67.299.382/0001-77</p>
-    <p style="margin-top:6px;">Última atualização: 07 de julho de 2026</p>
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand" aria-label="Partner Certificadora Digital — início">
+      <img src="logo-192.png" alt="" class="brand-logo" loading="eager" decoding="async">
+      <span class="brand-nome">Partner Certificadora Digital<small>Empresa privada</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="index.html#precos">Certificados</a>
+      <a href="duvidas-frequentes.html">Dúvidas</a>
+      <a href="transparencia-e-seguranca.html">Segurança</a>
+    </nav>
+    <a href="index.html#formulario" class="cta-nav">Solicitar contato</a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('topbar').classList.toggle('menu-open')"><span></span><span></span><span></span></button>
   </div>
 </header>
-
 <main>
-<div class="container">
+<section class="page-hero" id="topo">
+  <div class="container">
+    <a href="index.html" class="voltar">← Voltar ao início</a>
+    <span class="hero-eyebrow">Documento legal</span>
+    <h1>Política de <em>Cookies</em></h1>
+    <p class="lede">Como utilizamos cookies e tecnologias similares no site partnercertificadoradigital.com.</p>
+  </div>
+</section>
+<section class="bg-cru"><div class="container"><div class="prose" style="margin:0 auto;"><div class="destaque"><p><strong>Última atualização: julho de 2026.</strong> Esta Política de Cookies explica o que são cookies, quais tipos utilizamos e como você pode gerenciá-los.</p></div>
 
 <h2>1. O que são cookies</h2>
-<p>Cookies são pequenos arquivos de texto que os sites armazenam no seu dispositivo (computador, celular ou tablet) enquanto você navega. Eles servem para lembrar informações sobre sua visita, medir o desempenho do site e, quando aplicável, apoiar campanhas de marketing.</p>
-<p>Esta Política de Cookies explica quais cookies podem ser utilizados no website <a href="https://partnercertificadoradigital.com/">partnercertificadoradigital.com</a>, para que servem e como você pode controlá-los.</p>
+<p><strong>Cookies</strong> são pequenos arquivos de texto que sites armazenam no seu dispositivo (computador, celular, tablet) durante a navegação. Eles servem para lembrar preferências, medir o uso do site e melhorar a experiência do usuário.</p>
 
-<h2>2. Categorias de cookies utilizados</h2>
-
+<h2>2. Cookies utilizados neste site</h2>
 <h3>2.1. Cookies necessários</h3>
-<p>São indispensáveis para o funcionamento do site. Sem eles, funcionalidades básicas como navegação e acesso a áreas seguras não funcionam corretamente. Não podem ser desativados nos sistemas.</p>
-<table>
-  <thead>
-    <tr><th>Finalidade</th><th>Retenção</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Manter preferências básicas de navegação (idioma, sessão)</td>
-      <td>Sessão / até 1 ano</td>
-    </tr>
-    <tr>
-      <td>Garantir segurança na navegação (proteção contra CSRF, sessão HTTPS)</td>
-      <td>Sessão</td>
-    </tr>
-  </tbody>
-</table>
+<p>Essenciais para o funcionamento do site. Sem eles, o site não funciona corretamente. Não podem ser desativados.</p>
 
 <h3>2.2. Cookies analíticos</h3>
-<p>Coletam informações anônimas ou agregadas sobre como os visitantes usam o site (páginas visitadas, tempo de permanência, origem do acesso). Ajudam a melhorar o desempenho e a experiência do usuário.</p>
-<table>
-  <thead>
-    <tr><th>Ferramenta</th><th>Finalidade</th><th>Retenção</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Google Analytics 4 (GA4)</td>
-      <td>Medir tráfego, comportamento no site e desempenho de páginas</td>
-      <td>Até 14 meses</td>
-    </tr>
-    <tr>
-      <td>Google Tag Manager (GTM)</td>
-      <td>Gerenciar tags de mensuração (não coleta dados por si só)</td>
-      <td>Sessão</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>2.3. Cookies de marketing</h3>
-<p>Usados para exibir anúncios mais relevantes em outras plataformas (Google Ads, Meta) e para medir a eficácia das campanhas publicitárias. Só são ativados mediante consentimento, quando exigido.</p>
-<table>
-  <thead>
-    <tr><th>Ferramenta</th><th>Finalidade</th><th>Retenção</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Google Ads (conversion tag / remarketing)</td>
-      <td>Medir conversões de campanhas e exibir anúncios em rede de display/pesquisa</td>
-      <td>Até 90 dias</td>
-    </tr>
-    <tr>
-      <td>Meta Pixel (Facebook / Instagram)</td>
-      <td>Medir conversões e exibir anúncios em Facebook e Instagram</td>
-      <td>Até 90 dias</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="destaque">
-  <p>As ferramentas específicas ativas podem variar. Você pode verificar em tempo real quais cookies estão ativos no seu navegador acessando as ferramentas do desenvolvedor ou usando extensões como Cookie Editor.</p>
-</div>
-
-<h2>3. Como gerenciar cookies</h2>
-<p>Você pode aceitar, recusar ou apagar cookies a qualquer momento pelas configurações do seu navegador. Também pode configurar o navegador para avisá-lo antes de aceitar novos cookies.</p>
-
-<p>Instruções nos principais navegadores:</p>
+<p>Permitem entender como os visitantes usam o site — páginas mais acessadas, origem do tráfego, tempo de permanência. Utilizamos:</p>
 <ul>
-  <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
-  <li><a href="https://support.mozilla.org/pt-BR/kb/gerencie-configuracoes-armazenamento-dados-sites" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
-  <li><a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
-  <li><a href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+<li><strong>Google Analytics 4 (GA4)</strong> — análise de audiência do site.</li>
+<li><strong>Google Tag Manager (GTM)</strong> — gerenciamento de tags de analytics e conversão.</li>
 </ul>
 
-<p>Você também pode gerenciar suas preferências publicitárias no Google diretamente em <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">adssettings.google.com</a> e no Meta em <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener noreferrer">facebook.com/adpreferences</a>.</p>
+<h3>2.3. Cookies de marketing</h3>
+<p>Utilizados para mensurar campanhas publicitárias e otimizar anúncios. Utilizamos, quando aplicável:</p>
+<ul>
+<li><strong>Google Ads</strong> — conversões e remarketing.</li>
+<li><strong>Meta Pixel (Facebook Ads)</strong> — conversões e remarketing.</li>
+</ul>
 
-<div class="destaque">
-  <p><strong>Importante:</strong> desativar cookies pode afetar sua experiência no site. Cookies necessários não podem ser desativados sem prejuízo do funcionamento das páginas.</p>
-</div>
+<h2>3. Como gerenciar cookies</h2>
+<p>Você pode gerenciar cookies diretamente pelo navegador. Veja como:</p>
+<ul>
+<li><strong>Google Chrome:</strong> Configurações → Privacidade e segurança → Cookies</li>
+<li><strong>Mozilla Firefox:</strong> Configurações → Privacidade e Segurança → Cookies</li>
+<li><strong>Safari:</strong> Preferências → Privacidade → Gerenciar dados de sites</li>
+<li><strong>Microsoft Edge:</strong> Configurações → Cookies e permissões de site</li>
+</ul>
+<p><strong>Atenção:</strong> desabilitar cookies pode afetar o funcionamento do site e a qualidade da sua experiência.</p>
 
-<h2>4. Relação com a Política de Privacidade</h2>
-<p>O uso de cookies envolve o tratamento de dados pessoais (como IP, identificadores do dispositivo e comportamento de navegação). O tratamento desses dados observa integralmente o disposto na nossa <a href="politica-de-privacidade.html">Política de Privacidade</a> e nas disposições da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+<h2>4. Cookies de terceiros</h2>
+<p>Alguns cookies são gerenciados por terceiros (Google, Meta), sujeitos às respectivas políticas de privacidade:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link">Google — Política de Privacidade</a></li>
+<li><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer" class="link">Meta — Política de Privacidade</a></li>
+</ul>
 
-<h2>5. Alterações desta Política</h2>
-<p>Esta Política de Cookies pode ser atualizada a qualquer momento para refletir mudanças em nossas práticas ou nas ferramentas utilizadas. A versão em vigor é sempre a publicada nesta página, com a data de última atualização.</p>
+<h2>5. Base legal (LGPD)</h2>
+<p>O uso de cookies analíticos e de marketing é fundamentado no <strong>legítimo interesse</strong> (art. 7º, IX, LGPD) e no <strong>consentimento</strong> (art. 7º, I), quando aplicável. Você pode retirar seu consentimento a qualquer momento gerenciando os cookies no navegador ou entrando em contato pelo e-mail <a href="mailto:partner@partnercertificadoradigital.com" class="link">partner@partnercertificadoradigital.com</a>.</p>
 
-<h2>6. Contato</h2>
-<p>Para dúvidas sobre esta Política de Cookies:</p>
-<div class="destaque">
-  <p><strong>Partner Certificadora Digital LTDA</strong><br>
-  E-mail: <a href="mailto:partner@partnercertificadoradigital.com">partner@partnercertificadoradigital.com</a><br>
-  WhatsApp: (11) 99399-5170</p>
-</div>
-
-</div>
+<h2>6. Alterações</h2>
+<p>Esta Política pode ser atualizada. A versão vigente é a publicada nesta página, com data de última atualização no topo. Consulte também nossa <a href="politica-de-privacidade.html" class="link">Política de Privacidade</a>.</p></div></div></section>
 </main>
-
+<section class="cta-final">
+  <div class="container">
+    <span class="eyebrow on-dark" style="justify-content:center;">Pronto para começar?</span>
+    <h2>Fale com <em>quem vai orientar</em> sua solicitação</h2>
+    <p>Preencha seus dados e receba orientação sobre qual certificado é o ideal para o seu caso.</p>
+    <a href="index.html#formulario" class="btn-final" data-conversion="scroll-form-final">Solicitar contato</a>
+    <p class="cta-mono">Atendimento por <strong>Partner Certificadora Digital LTDA</strong> · CNPJ 67.299.382/0001-77 · Empresa privada. Se preferir falar direto, o <a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." rel="noopener">WhatsApp (11) 99399-5170</a> está disponível de segunda a sexta, 08h às 18h.</p>
+  </div>
+</section>
 <footer>
   <div class="container">
-    <p>© 2026 Partner Certificadora Digital LTDA — CNPJ 67.299.382/0001-77</p>
-    <p style="margin-top:10px;">
-      <a href="index.html">Início</a> ·
-      <a href="quem-somos.html">Quem Somos</a> ·
-      <a href="como-funciona.html">Como Funciona</a> ·
-      <a href="duvidas-frequentes.html">Dúvidas</a> ·
-      <a href="transparencia-e-seguranca.html">Segurança</a> ·
-      <a href="termos-de-uso.html">Termos de Uso</a> ·
-      <a href="politica-de-cookies.html">Política de Cookies</a>
-    </p>
+    <div class="foot-top">
+      <div>
+        <div class="foot-marca"><img src="logo-192.png" alt="" class="brand-logo" loading="lazy" decoding="async">Partner Certificadora Digital</div>
+        <p class="foot-desc">Empresa privada de atendimento comercial, orientação e suporte para solicitação de certificados digitais ICP-Brasil.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="como-funciona.html">Como funciona</a></li>
+          <li><a href="index.html#precos">Certificados</a></li>
+          <li><a href="duvidas-frequentes.html">Dúvidas</a></li>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="certificado-digital-e-cpf-a1.html">e-CPF A1</a></li>
+          <li><a href="certificado-digital-e-cnpj-a1.html">e-CNPJ A1</a></li>
+          <li><a href="certificado-digital-para-contadores.html">Para contadores</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Segurança</h4>
+        <ul>
+          <li><a href="transparencia-e-seguranca.html">Transparência</a></li>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+          <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-aviso"><strong>Empresa privada.</strong> A Partner Certificadora Digital LTDA é uma empresa privada de atendimento comercial, orientação e suporte para solicitação de certificados digitais ICP-Brasil. <strong>Não somos órgão público, Receita Federal, gov.br ou entidade governamental.</strong></div>
+    <div class="foot-inst">
+      <div><strong>Razão social</strong>Partner Certificadora Digital LTDA</div>
+      <div><strong>CNPJ</strong><span class="mono-item">67.299.382/0001-77</span></div>
+      <div><strong>Endereço</strong>Rua Coronel José Eusébio, 95, Casa 13 · Higienópolis · São Paulo/SP · CEP 01239-030</div>
+      <div><strong>Horário</strong>Segunda a sexta · 08h às 18h</div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Partner Certificadora Digital LTDA. Todos os direitos reservados.</span>
+      <span class="foot-links">
+        <a href="politica-de-privacidade.html">Privacidade</a>
+        <a href="termos-de-uso.html">Termos</a>
+        <a href="politica-de-cookies.html">Cookies</a>
+        <a href="transparencia-e-seguranca.html">Segurança</a>
+      </span>
+    </div>
   </div>
 </footer>
 
+<a href="https://wa.me/5511993995170?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20certificado%20digital." class="wpp-float" aria-label="Falar no WhatsApp" target="_blank" rel="noopener noreferrer" data-conversion="whatsapp-float">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.28-1.38a9.87 9.87 0 004.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0012.04 2zm5.8 14.03c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.11-1.8-.11a16.5 16.5 0 01-1.65-.6c-2.9-1.25-4.8-4.15-4.94-4.34-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.28.57-.35.76-.35h.55c.17 0 .41-.04.63.48.24.58.8 2 .87 2.14.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.13-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.24 1.39.28.14.44.12.6-.07.17-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.94.93.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+<script>
+document.querySelectorAll('[data-conversion]').forEach(function(el){
+  if (el.tagName === 'BUTTON' && el.type === 'submit') return;
+  el.addEventListener('click', function(){
+    var nome = this.getAttribute('data-conversion');
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'conversao_cta',cta_id:nome,cta_pagina:document.title.slice(0,60)});
+    if (typeof gtag === 'function') gtag('event','conversao_cta',{cta_id:nome});
+  });
+});
+</script>
 </body>
 </html>
