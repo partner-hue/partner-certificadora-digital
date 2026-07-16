@@ -19,12 +19,13 @@
 
   /* Rótulos de conversão do Google Ads.
      Onde encontrar: Google Ads > Objetivos > Conversões > (ação) >
-     "Configurar tag" > trecho send_to: 'AW-18327593171/ROTULO'.
-     Copie apenas a parte ROTULO (depois da barra).
+     instruções da tag > trecho send_to: 'AW-18327593171/ROTULO'.
+     Aceita os dois formatos: o send_to completo ('AW-18327593171/ROTULO')
+     ou apenas o rótulo ('ROTULO').
      Enquanto o valor for null, a interação é enviada como evento comum
-     (visível no GA4/Tag Assistant), mas não é contada como conversão. */
+     (visível no Tag Assistant), mas não é contada como conversão. */
   var CONVERSOES = {
-    lead_form_submit: null, // envio de formulário  -> ex.: 'AbCdEfGhIj-KlMnOpQ'
+    lead_form_submit: 'AW-18327593171/3GG_CPKLzdEcENPBo6NE', // envio de formulário
     whatsapp_click:   null, // clique no WhatsApp
     telefone_click:   null, // clique em telefone
     conversao_cta:    null  // demais CTAs (âncoras para o formulário)
@@ -53,7 +54,9 @@
 
     var rotulo = CONVERSOES[evento];
     if (rotulo) {
-      window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + rotulo });
+      // Aceita o send_to completo ou só o rótulo, sem duplicar o ID da conta.
+      var destino = rotulo.indexOf('/') !== -1 ? rotulo : ADS_ID + '/' + rotulo;
+      window.gtag('event', 'conversion', { send_to: destino });
     }
   }
 
