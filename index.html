@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) — Google Tag GT-5RMBRRZC / Google Ads AW-18327593171 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-5RMBRRZC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GT-5RMBRRZC');
+</script>
 <meta name="theme-color" content="#06251c">
 <title>Certificado Digital ICP-Brasil em São Paulo | e-CPF e e-CNPJ | Partner Certificadora Digital</title>
 <meta name="description" content="Empresa privada de atendimento e orientação para solicitação de Certificado Digital ICP-Brasil (e-CPF e e-CNPJ, A1 e A3) em São Paulo e em todo o Brasil, com validação por videoconferência.">
@@ -311,10 +320,6 @@ footer{background:var(--verde-tinta);color:rgba(245,242,232,0.65);padding:var(--
 @media (prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}}
 </style>
 
-<!-- GTM (inserir GTM-XXXXXXX quando disponível) -->
-<!--
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
--->
 </head>
 <body>
 
@@ -663,9 +668,7 @@ footer{background:var(--verde-tinta);color:rgba(245,242,232,0.65);padding:var(--
             status.className = 'form-status success';
             status.textContent = 'Recebemos sua solicitação. Nossa equipe entrará em contato em breve pelo canal informado.';
             form.reset(); button.textContent = 'Solicitação enviada ✓';
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'lead_form_submit', form_id: 'form-lead', cta_pagina: 'home' });
-            if (typeof gtag === 'function') gtag('event', 'lead_form_submit', { form_id: 'form-lead', cta_pagina: 'home' });
+            if (window.PartnerTrack) PartnerTrack.lead('form-lead');
           } else { throw new Error((res.body && res.body.message) || 'Erro no envio.'); }
         })
         .catch(function() {
@@ -675,15 +678,7 @@ footer{background:var(--verde-tinta);color:rgba(245,242,232,0.65);padding:var(--
         });
     });
   }
-  document.querySelectorAll('[data-conversion]').forEach(function(el) {
-    if (el.tagName === 'BUTTON' && el.type === 'submit') return;
-    el.addEventListener('click', function() {
-      var nome = this.getAttribute('data-conversion');
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'conversao_cta', cta_id: nome, cta_pagina: 'home' });
-      if (typeof gtag === 'function') gtag('event', 'conversao_cta', { cta_id: nome, cta_pagina: 'home' });
-    });
-  });
 </script>
+<script src="assets/js/tracking.js" defer></script>
 </body>
 </html>
