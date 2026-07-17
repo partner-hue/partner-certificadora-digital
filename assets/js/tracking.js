@@ -1,87 +1,42 @@
 /* ============================================================
    Partner Certificadora Digital — camada única de rastreamento
    ------------------------------------------------------------
-   Google Tag ID.....: GT-5RMBRRZC
-   Google Ads........: AW-18327593171
-   Meta Pixel........: 2080538082501495
+   Google Tag ID....: GT-5RMBRRZC   (carregado no <head> de cada página)
+   Destino Google Ads: AW-18327593171
 
-   Eventos Google:
-   - lead_form_submit
-   - whatsapp_click
-   - telefone_click
-   - email_click
-   - conversao_cta
+   O carregamento do gtag.js fica no <head> de cada página, conforme o
+   padrão oficial do Google. Este arquivo NÃO carrega a tag: ele concentra
+   apenas os eventos e as conversões, para não haver código espalhado.
 
-   Eventos Meta:
-   - PageView
-   - ViewContent
-   - Contact
-   - Lead
-   - CTA_Click (personalizado)
+   Para ativar uma conversão do Google Ads, basta preencher o rótulo
+   correspondente no objeto CONVERSOES abaixo. Nenhum outro arquivo
+   precisa ser alterado.
    ============================================================ */
 (function (window, document) {
   'use strict';
 
   var ADS_ID = 'AW-18327593171';
-  var META_PIXEL_ID = '2080538082501495';
 
+  /* Rótulos de conversão do Google Ads.
+     Onde encontrar: Google Ads > Objetivos > Conversões > (ação) >
+     "Configurar tag" > trecho send_to: 'AW-18327593171/ROTULO'.
+     Copie apenas a parte ROTULO (depois da barra).
+     Enquanto o valor for null, a interação é enviada como evento comum
+     (visível no GA4/Tag Assistant), mas não é contada como conversão. */
   var CONVERSOES = {
-    lead_form_submit: 'AW-18327593171/3GG_CPKLzdEcENPBo6NE',
-    whatsapp_click: null,
-    telefone_click: null,
-    email_click: null,
-    conversao_cta: null
+    lead_form_submit: null, // envio de formulário  -> ex.: 'AbCdEfGhIj-KlMnOpQ'
+    whatsapp_click:   null, // clique no WhatsApp
+    telefone_click:   null, // clique em telefone
+    conversao_cta:    null  // demais CTAs (âncoras para o formulário)
   };
 
   function nomePagina() {
-    return (document.title || 'Partner Certificadora Digital').slice(0, 100);
+    return document.title.slice(0, 60);
   }
 
-  function caminhoPagina() {
-    return window.location.pathname || '/';
-  }
-
-  function carregarMetaPixel() {
-    if (window.fbq) return;
-
-    /* Código-base oficial do Meta Pixel, carregado uma única vez. */
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = true;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = true;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-    window.fbq('init', META_PIXEL_ID);
-    window.fbq('track', 'PageView');
-    window.fbq('track', 'ViewContent', {
-      content_name: nomePagina(),
-      content_category: 'Certificado Digital',
-      content_ids: [caminhoPagina()],
-      content_type: 'product'
-    });
-  }
-
-  function metaTrack(nome, params, personalizado) {
-    if (typeof window.fbq !== 'function') return;
-    if (personalizado) {
-      window.fbq('trackCustom', nome, params || {});
-    } else {
-      window.fbq('track', nome, params || {});
-    }
-  }
-
-  function enviarGoogle(evento, params) {
+  /* Envia a interação para o dataLayer e para o gtag, e — se houver rótulo
+     cadastrado — dispara também a conversão do Google Ads. */
+  function enviar(evento, params) {
     params = params || {};
     if (!params.cta_pagina) params.cta_pagina = nomePagina();
 
@@ -89,7 +44,6 @@
     for (var chave in params) {
       if (Object.prototype.hasOwnProperty.call(params, chave)) registro[chave] = params[chave];
     }
-
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(registro);
 
@@ -99,103 +53,43 @@
 
     var rotulo = CONVERSOES[evento];
     if (rotulo) {
-      var destino = rotulo.indexOf('/') !== -1 ? rotulo : ADS_ID + '/' + rotulo;
-      window.gtag('event', 'conversion', { send_to: destino });
+      window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + rotulo });
     }
   }
 
-  function enviar(evento, params) {
-    params = params || {};
-    enviarGoogle(evento, params);
-
-    switch (evento) {
-      case 'lead_form_submit':
-        metaTrack('Lead', {
-          content_name: 'Formulário de contato',
-          form_id: params.form_id || '',
-          page_title: nomePagina()
-        });
-        break;
-      case 'whatsapp_click':
-        metaTrack('Contact', {
-          contact_method: 'whatsapp',
-          cta_id: params.cta_id || '',
-          page_title: nomePagina()
-        });
-        break;
-      case 'telefone_click':
-        metaTrack('Contact', {
-          contact_method: 'telefone',
-          phone: params.telefone || '',
-          page_title: nomePagina()
-        });
-        break;
-      case 'email_click':
-        metaTrack('Contact', {
-          contact_method: 'email',
-          email: params.email || '',
-          page_title: nomePagina()
-        });
-        break;
-      case 'conversao_cta':
-        metaTrack('CTA_Click', {
-          cta_id: params.cta_id || '',
-          page_title: nomePagina(),
-          page_path: caminhoPagina()
-        }, true);
-        break;
-    }
-  }
-
+  /* API pública usada pelos formulários das páginas. */
   window.PartnerTrack = {
     evento: enviar,
-    lead: function (formId) {
-      enviar('lead_form_submit', { form_id: formId || 'form-lead' });
-    },
-    cta: function (ctaId) {
-      enviar('conversao_cta', { cta_id: ctaId || 'cta' });
-    }
+    lead: function (formId) { enviar('lead_form_submit', { form_id: formId }); },
+    cta: function (ctaId) { enviar('conversao_cta', { cta_id: ctaId }); }
   };
 
-  function ehWhatsApp(href, ctaId) {
-    return (ctaId && ctaId.indexOf('whatsapp') === 0) ||
-      href.indexOf('wa.me') !== -1 ||
-      href.indexOf('api.whatsapp.com') !== -1;
+  function ehWhatsApp(el, ctaId) {
+    if (ctaId && ctaId.indexOf('whatsapp') === 0) return true;
+    var href = el.getAttribute('href') || '';
+    return href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1;
   }
 
   function ligar() {
-    document.addEventListener('click', function (event) {
-      var el = event.target.closest('a, button');
-      if (!el) return;
-
-      /* Submit é contabilizado apenas após confirmação real do formulário. */
+    /* CTAs marcados com data-conversion (WhatsApp flutuante, âncoras, etc.) */
+    document.querySelectorAll('[data-conversion]').forEach(function (el) {
+      // O botão de submit é contabilizado no envio do formulário, não no clique.
       if (el.tagName === 'BUTTON' && el.type === 'submit') return;
+      el.addEventListener('click', function () {
+        var ctaId = this.getAttribute('data-conversion');
+        enviar(ehWhatsApp(this, ctaId) ? 'whatsapp_click' : 'conversao_cta', { cta_id: ctaId });
+      });
+    });
 
-      var href = el.getAttribute('href') || '';
-      var ctaId = el.getAttribute('data-conversion') || '';
-
-      if (ehWhatsApp(href, ctaId)) {
-        enviar('whatsapp_click', { cta_id: ctaId || 'whatsapp-link' });
-        return;
-      }
-
-      if (href.indexOf('tel:') === 0) {
-        enviar('telefone_click', { telefone: href.replace('tel:', '') });
-        return;
-      }
-
-      if (href.indexOf('mailto:') === 0) {
-        enviar('email_click', { email: href.replace('mailto:', '').split('?')[0] });
-        return;
-      }
-
-      if (ctaId) {
-        enviar('conversao_cta', { cta_id: ctaId });
-      }
-    }, false);
+    /* Cliques em telefone. O guard evita contagem dupla caso o link
+       também tenha data-conversion. */
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (el) {
+      if (el.hasAttribute('data-conversion')) return;
+      el.addEventListener('click', function () {
+        enviar('telefone_click', { telefone: (this.getAttribute('href') || '').replace('tel:', '') });
+      });
+    });
   }
-
-  carregarMetaPixel();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ligar);
